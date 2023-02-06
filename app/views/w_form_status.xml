@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="w_form_status" onPostlayout="animateOpen" onSwipe="doSwipeWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<!-- iOS Default BlurView Used As Innerlay -->
+			<BlurView platform="ios" id="blur_main_view"></BlurView>
+			<!-- Content Holder as Center of Screen -->
+			<View id="v_content_holder">
+				<Label id="lbl_swipe_down_msg" />
+				<View id="v_content_main_holder">
+					<Label id="lbl_form_title" />
+					<Label id="lbl_form_subtitle" />
+					<View id="v_date_time_holder">
+						<View id="v_date_holder">
+							<Label id="lbl_date_header" />
+							<Label id="lbl_date_value" />
+						</View>
+						<View id="v_time_holder">
+							<Label id="lbl_time_header" />
+							<Label id="lbl_time_value" />
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

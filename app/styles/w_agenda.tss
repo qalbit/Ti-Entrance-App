@@ -1,0 +1,281 @@
+"#w_agenda": {
+	backgroundImage: "",
+	navBarHidden: false
+},
+
+/**
+ * 	Left Navigation Button Container
+ */
+"#v_left_btn_cont": {
+	left: 0,
+	width: Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	layout: 'horizontal'
+}
+"#btn_left_toggle": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_menu.png"
+},
+"#btn_left_toggle[platform=ios]": {
+	left: 8
+},
+"#v_left_month": {
+	left: Alloy.CFG.Space.Normal,
+	width: 160,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+}
+"#lbl_left_month": {
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "December"
+},
+"#btn_left_month": {
+	left: Alloy.CFG.Space.Small,
+	width: 14,
+	height: 14,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_dropdown_down.png",
+	tintColor: Alloy.CFG.Colors.lblLightColor
+},
+/**
+ * 	Right Navigation button
+ */
+"#btn_right_refresh": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_refresh.png"
+},
+"#btn_right_refresh[platform=ios]": {
+	right: 8
+},
+
+/**
+ * 	List View Month Event Container
+ */
+"#list_month_events": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+/**
+ * 	Month List Template
+ */
+"#item_template_month_list": {
+	top: 0,
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionBackgroundColor: 'transparent',
+	selectionStyle: Titanium.UI.SELECTION_STYLE_NONE
+},
+"#item_template_no_data": {
+	top: 0,
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 180,
+	backgroundColor: 'transparent',
+	selectionBackgroundColor: 'transparent',
+	selectionStyle: 'none'	
+},
+"#v_item_cont": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Tiny,
+	bottom: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+"#v_item_cont_no_data": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent'
+},
+"#v_no_data_holder": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'	
+},
+"#ig_no_data": {
+	width: 100,
+	height: 100,
+	image: '/images/ic_no_agenda.png'
+},
+"#lbl_no_data": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Geen agenda gevonden!"
+},
+"#v_item_date_cont": {
+	left: 0,
+	top: 0,
+	width: 55,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#lbl_item_day": {
+	top: '-6',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 30	
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: '02'
+},
+"#lbl_item_day_week": {
+	top: '-4',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: 'Thu'
+},
+
+"#v_item_event_type_cont": {
+	left: 65,
+	right: 0,
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	borderRadius: Alloy.CFG.Space.TwoDot,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary,
+	layout: 'vertical'
+},
+
+"#lbl_event_title": {
+	top: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Small,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	text: "Christian Zibreg"
+},
+"#lbl_event_subtitle": {
+	top: 0,
+	left: Alloy.CFG.Space.Small,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: ""
+},
+"#item_location": {
+	top: 0,
+	bottom: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Small,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.tfLightColor,
+	text: ""
+},
+"#lbl_event_type": {
+	top: 0,
+	bottom: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Small,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "Birthday"
+},
+
+/**
+ * 	Event Listing based on Week Calendar
+ */
+"#v_week_events_cont": {
+	top: '-375',
+	width: Ti.UI.FILL,
+	height: 375,
+	backgroundColor: 'transparent'
+},
+"#v_week_day_name_holder": {
+	top:0,
+	width: Ti.UI.FILL,
+	height: 20,
+	layout: 'horizontal',
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+".lbl_week_day_name": {
+	left: 0,
+	top: 5,
+	width: Alloy.CFG.UI.Date.normalWidth,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 10,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblSemiLightColor
+},
+"#v_week_events_holder_cont": {
+	top: 20,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+},
+"#v_week_drag_cont": {
+	bottom: 0,
+	width: 100,
+	height: 26,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+"#btn_drag_week_holder": {
+	width: 24,
+	height: 24,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_dropdown_down.png",
+	tintColor: Alloy.CFG.Colors.lblLightColor
+}

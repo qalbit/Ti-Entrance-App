@@ -1,0 +1,25 @@
+<Alloy>
+	<View id="w_activity">
+		<ListView id="list_activities" defaultItemTemplate="template_item_activity" onItemclick="doClickTemplateItem">
+			<Templates>
+				<ItemTemplate name="template_item_activity" id="template_item">
+					<View id="v_item_container">
+						<Label class="lbl_item_title" id="item_product" bindId="product" />
+						<Label class="lbl_item_desc" id="item_id" bindId="id" />
+						<!-- <Label class="lbl_item_desc" id="item_serial" bindId="serial" /> -->
+						<Label class="lbl_item_desc" id="item_store" bindId="store" />
+						<Label class="lbl_item_desc" id="item_location" bindId="location" />
+						<Label class="lbl_item_desc" id="item_status" bindId="status" />
+					</View>
+					<View id="v_action_cont">
+						<Label class="lbl_action_title" id="lbl_edit" bindId="editAction" />
+						<Label class="lbl_action_title" id="lbl_delete" bindId="deleteAction" />
+						<Label class="lbl_action_title" id="lbl_history" bindId="historyAction" />
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<FooterView height="0" />
+			<ListSection id="list_section_activities_main" />
+		</ListView>
+	</View>
+</Alloy>

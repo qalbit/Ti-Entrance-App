@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<id>com.conceptos.entrance</id>
+	<name>Entrance</name>
+	<version>1.1.1.1</version>
+	<publisher>QalbIT Infotech Pvt Ltd</publisher>
+	<url>https://www.qalbit.com</url>
+	<description>Entrance Service Application</description>
+	<copyright>2023 by QalbIT</copyright>
+	<icon>appicon.png</icon>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>false</navbar-hidden>
+	<guid>cf20ad1b-13b0-4597-b3e4-d08b2260ae1a</guid>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<property name="run-on-main-thread" type="bool">false</property>
+	<property name="ti.playservices.validate.on.startup" type="bool">false</property>
+	<ios>
+		<enable-launch-screen-storyboard>false</enable-launch-screen-storyboard>
+		<use-app-thinning>true</use-app-thinning>
+		<plist>
+			<dict>
+				<key>UISupportedInterfaceOrientations~iphone</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+				</array>
+				<key>UISupportedInterfaceOrientations~ipad</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationPortraitUpsideDown</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UIRequiresPersistentWiFi</key>
+				<false/>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+				<key>UIStatusBarHidden</key>
+				<false/>
+				<key>UIStatusBarStyle</key>
+				<string>UIStatusBarStyleDefault</string>
+				<key>NSPhotoLibraryUsageDescription</key>
+                <string>Foto's gallerij wordt gebruikt om extra informatie mee te sturen.</string>
+                <key>NSPhotoLibraryAddUsageDescription</key>
+                <string>Foto's gallerij wordt gebruikt om extra informatie mee te sturen.</string>
+                <key>NSCameraUsageDescription</key>
+                <string>Camera wordt gebruikt om extra informatie mee te sturen.</string>
+			</dict>
+		</plist>
+	</ios>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest android:versionCode="3" android:versionName="1.0.2" package="com.conceptos.hsb" xmlns:android="http://schemas.android.com/apk/res/android">
+            <application android:theme="@style/MyTheme.Titanium"></application>
+        </manifest>
+	</android>
+	<modules>
+		<module platform="iphone">dk.napp.drawer</module>
+        <module platform="iphone">ti.paint</module>
+        <module platform="iphone">ti.imagefactory</module>
+        <module platform="iphone">firebase.core</module>
+		<module platform="iphone">firebase.cloudmessaging</module>
+		<module platform="android">ti.imagefactory</module>
+        <module platform="android">firebase.core</module>
+        <module platform="android">firebase.cloudmessaging</module>
+        <module platform="android">ti.playservices</module>
+		<module platform="android">ti.paint</module>
+	</modules>
+	<deployment-targets>
+		<target device="android">true</target>
+		<target device="ipad">true</target>
+		<target device="iphone">true</target>
+	</deployment-targets>
+	<sdk-version>11.1.1.GA</sdk-version>
+	<plugins><plugin version="1.0">ti.alloy</plugin>
+	</plugins>
+</ti:app>

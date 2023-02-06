@@ -1,0 +1,169 @@
+<Alloy>
+	<NavigationWindow role="centerWindow" module="xp.ui" platform="ios">
+		<Window id="w_planner">
+			<LeftNavButton>
+				<Button id="btn_left_toggle" onClick="doClickToggle" />
+			</LeftNavButton>
+			<View id="v_cont">
+				<ListView id="list_planner" defaultItemTemplate="template_content">
+					<Templates>
+						<ItemTemplate id="item_template_header" name="template_header">
+							<View id="item_container_content" bindId="mainHolder">
+								<Label id="card_date_word" bindId="cardDateWord" />
+								<Label id="card_date_digit" bindId="cardDateDigit" />
+							</View>
+						</ItemTemplate>
+						<ItemTemplate id="item_template_content" name="template_content">
+							<View id="item_container" bindId="mainHolder">
+								<View id="v_seperator" />
+								<!-- Holder which holds Activity and Location -->
+								<View id="item_holder">
+									<!-- ACTIVITY -->
+									<View id="item_activity_holder">
+										<!-- ICON -->
+										<View id="action_img_cont">
+											<ImageView id="image_action" bindId="actionIcon" />
+										</View>
+										<!-- TITLE ACTIVITY -->
+										<Label id="activity_title" bindId="actionTitle" />
+									</View>
+									<!-- CONTENT -->
+									<View id="item_content_holder">
+										<Label id="item_location_key" />
+										<Label id="item_location_val" bindId="location" />
+										<Label id="item_time" bindId="time" />
+									</View>
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection>
+						<ListItem
+						template="template_header"
+						cardDateWord:text="Today"
+						cardDateDigit:text="22 Jan 2019">
+						</ListItem>
+						<ListItem
+						template="template_content"
+						actionIcon:image="/images/ic_deliver.png"
+						actionTitle:text="Service">
+						</ListItem>
+						<ListItem
+						template="template_content"
+						actionIcon:image="/images/ic_maintain.png"
+						actionTitle:text="Onderhoud">
+						</ListItem>
+						<ListItem
+						template="template_content"
+						actionIcon:image="/images/ic_maintain.png"
+						actionTitle:text="Onderhoud">
+						</ListItem>
+						<ListItem
+						template="template_content"
+						mainHolder:borderRadius="Alloy.CFG.Space.Tiny"
+						actionIcon:image="/images/ic_service.png"
+						actionTitle:text="Levering">
+						</ListItem>
+						<ListItem
+						template="template_header"
+						cardDateWord:text="Tomorrow"
+						cardDateDigit:text="21 Jan 2019">
+						</ListItem>
+						<ListItem
+						template="template_content"
+						actionIcon:image="/images/ic_deliver.png"
+						actionTitle:text="Service">
+						</ListItem>
+						<ListItem
+						template="template_content"
+						mainHolder:borderRadius="Alloy.CFG.Space.Tiny"
+						actionIcon:image="/images/ic_service.png"
+						actionTitle:text="Levering">
+						</ListItem>
+					</ListSection>
+				</ListView>
+			</View>
+		</Window>
+	</NavigationWindow>
+	<Window id="w_planner" module="xp.ui" platform="android">
+		<View id="v_cont">
+			<ListView id="list_planner" defaultItemTemplate="template_content">
+				<Templates>
+					<ItemTemplate id="item_template_header" name="template_header">
+						<View id="item_container_content" bindId="mainHolder">
+							<Label id="card_date_word" bindId="cardDateWord" />
+							<Label id="card_date_digit" bindId="cardDateDigit" />
+						</View>
+					</ItemTemplate>
+					<ItemTemplate id="item_template_content" name="template_content">
+						<View id="item_container" bindId="mainHolder">
+							<View id="v_seperator" />
+							<!-- Holder which holds Activity and Location -->
+							<View id="item_holder">
+								<!-- ACTIVITY -->
+								<View id="item_activity_holder">
+									<!-- ICON -->
+									<View id="action_img_cont">
+										<ImageView id="image_action" bindId="actionIcon" />
+									</View>
+									<!-- TITLE ACTIVITY -->
+									<Label id="activity_title" bindId="actionTitle" />
+								</View>
+								<!-- CONTENT -->
+								<View id="item_content_holder">
+									<Label id="item_location_key" />
+									<Label id="item_location_val" bindId="location" />
+									<Label id="item_time" bindId="time" />
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection>
+					<ListItem
+					template="template_header"
+					cardDateWord:text="Today"
+					cardDateDigit:text="22 Jan 2019">
+					</ListItem>
+					<ListItem
+					template="template_content"
+					actionIcon:image="/images/ic_deliver.png"
+					actionTitle:text="Service">
+					</ListItem>
+					<ListItem
+					template="template_content"
+					actionIcon:image="/images/ic_maintain.png"
+					actionTitle:text="Onderhoud">
+					</ListItem>
+					<ListItem
+					template="template_content"
+					actionIcon:image="/images/ic_maintain.png"
+					actionTitle:text="Onderhoud">
+					</ListItem>
+					<ListItem
+					template="template_content"
+					mainHolder:borderRadius="Alloy.CFG.Space.Tiny"
+					actionIcon:image="/images/ic_service.png"
+					actionTitle:text="Levering">
+					</ListItem>
+					<ListItem
+					template="template_header"
+					cardDateWord:text="Tomorrow"
+					cardDateDigit:text="21 Jan 2019">
+					</ListItem>
+					<ListItem
+					template="template_content"
+					actionIcon:image="/images/ic_deliver.png"
+					actionTitle:text="Service">
+					</ListItem>
+					<ListItem
+					template="template_content"
+					mainHolder:borderRadius="Alloy.CFG.Space.Tiny"
+					actionIcon:image="/images/ic_service.png"
+					actionTitle:text="Levering">
+					</ListItem>
+				</ListSection>
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

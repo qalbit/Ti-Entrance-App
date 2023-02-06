@@ -1,0 +1,25 @@
+<Alloy>
+	<View id="tabs_group" onClick="doClickTabGroup">
+		<View id="tab1" class="tab">
+			<Label id="title_1" class="title" />
+			<View id="seperator1" class="seperator" />
+			<View id="v_badge_cont_1" class="v_badge_cont">
+				<Label id="lbl_badge_1" class="lbl_badge" />
+			</View>
+		</View>
+		<View id="tab2" class="tab">
+			<Label id="title_2" class="title" />
+			<View id="seperator2" class="seperator" />
+			<View id="v_badge_cont_2" class="v_badge_cont">
+				<Label id="lbl_badge_2" class="lbl_badge" />
+			</View>
+		</View>
+		<View id="tab3" class="tab">
+			<Label id="title_3" class="title" />
+			<View id="seperator3" class="seperator" />
+			<View id="v_badge_cont_3" class="v_badge_cont">
+				<Label id="lbl_badge_3" class="lbl_badge" />
+			</View>
+		</View>
+	</View>
+</Alloy>

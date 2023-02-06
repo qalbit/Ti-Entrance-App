@@ -1,0 +1,80 @@
+"#w_register[platform=android]": {
+	theme: "Theme.AppCompat.NoTitleBar"
+},
+// Scrollable holder which holds all in it.
+"#scr_cont": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical'
+},
+// View that holds Elements 
+"#v_elem_holder": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+// Dynamic logo that hold application logo
+"#ig_logo": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: Alloy.CFG.Default.logo
+},
+// TextField for Holding Company name field
+"#txf_companyname": {
+	top: Alloy.CFG.Space.Huge,
+	hintText: L("company_name"),
+	returnKeyType: Ti.UI.RETURNKEY_NEXT
+},
+// TextField for Holding Contact Person field
+"#txf_contactperson": {
+	top: Alloy.CFG.Space.Small,
+	hintText: L("contact_person"),
+	returnKeyType: Ti.UI.RETURNKEY_NEXT
+},
+// TextField for Holding Email field
+"#txf_email": {
+	top: Alloy.CFG.Space.Small,
+	hintText: L("email_address"),
+	keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+	returnKeyType: Ti.UI.RETURNKEY_NEXT
+},
+// TextField for Holding Phone Number field
+"#txf_phone": {
+	top: Alloy.CFG.Space.Small,
+	hintText: L("contact_number"),
+	keyboardType: Ti.UI.KEYBOARD_TYPE_PHONE_PAD,
+	returnKeyType: Ti.UI.RETURNKEY_NEXT
+},
+// Button which appear only in iOS & only on Keyboard toolbar Item only.
+"#btn_next": {
+	systemButton: Ti.UI.iOS.SystemButton.DONE,
+	style: Ti.UI.iOS.SystemButtonStyle.DONE
+},
+// View which holds one & two view in horizontal layout
+"#v_additional_action": {
+	top: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+// Label for Forgot Password
+"#lbl_login_back": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "\u25C0 Login"
+}, 
+// Button for Register User
+"#btn_register": {
+	top: Alloy.CFG.Space.Huge,
+	title: L("register")
+}

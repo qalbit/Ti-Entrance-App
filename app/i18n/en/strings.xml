@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="username">Gebruikersnaam</string>
+	<string name="password">Wachtwoord</string>
+	<string name="forgot_password">Wachtwoord vergeten</string>
+	<string name="register">Account aanvragen</string>
+	<string name="company_name">Bedrijfsnaam</string>
+	<string name="contact_person">Contactpersoon</string>
+	<string name="email_address">E-mail adres</string>
+	<string name="contact_number">Telefoonnummer</string>
+	<string name="forgot_password_quest">uw wachtwoord vergeten?</string>
+	<string name="forgot_password_msg">U kunt uw wachtwoord opnieuw instellen door uw gebruikersnaam in het onderstaande veld in te voeren. Hierna ontvangt u de reset-link op uw geregistreerde e-mailadres.</string>
+	<string name="internet_required">Internetverbinding vereist!</string>
+</resources>

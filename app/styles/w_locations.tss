@@ -1,0 +1,72 @@
+"#w_locations": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: "#55000000",
+	navBarHidden: true
+},
+"#w_locations[platform=android]": {
+	theme: "Theme.AppCompat.NoTitleBar"
+}
+
+"#btn_close": {
+	width: 32,
+	height: 32,
+	top: 40,
+	right: 20,
+	borderRadius: 16,
+	borderWidth: 1,
+	borderColor: Alloy.CFG.Colors.colorPrimaryDark,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor,
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	title: "x"
+},
+
+"#v_cont_list": {
+	top: 50,
+	bottom: 50,
+	left: 30,
+	right: 30,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	borderRadius: Alloy.CFG.Space.Normal,
+},
+
+"#list_locations": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#template_name": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#lbl_name": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+},

@@ -1,0 +1,204 @@
+"#w_add_product_information": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: false,
+	title: "Informatie",
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	backgroundImage: ""
+},
+
+"#fab_action_add": {
+	width: 36,
+	height: 36,
+	image: "images/ic_add.png"
+},
+
+"#scr_cont": {
+	top: 0,
+	bottom: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+},
+
+"#lbl_product_title": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "Test"
+},
+
+".v_cont_tf": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+".v_cont_material": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+".v_cont_photo_add": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: 30,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: 15
+},
+
+"#lbl_select_photo": {
+	text: "Foto's toevoegen",
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+"#lbl_select_material": {
+	text: "Materialen toevoegen",
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+}
+
+"#lbl_select_photo_add": {
+	right: 4,
+	top: 4,
+	width: 22,
+	height: 22,
+	borderRadius: 11,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor, 
+	text: "+",
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+
+"#scr_ig_container": {
+	width: Ti.UI.FILL,
+	height: 280,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'horizontal',
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false
+},
+
+".v_cont_photos": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+".lbl_title": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Test"
+},
+
+".txf_value": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 46,
+	padding: {
+		top: Alloy.CFG.Space.Small,
+		bottom: Alloy.CFG.Space.Small,
+		left: Alloy.CFG.Space.Small,
+		right: Alloy.CFG.Space.Small,
+	},
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	backgroundColor: Alloy.CFG.Colors.bgLightGray
+},
+".txf_value[if=Alloy.isTablet]": {
+	height: 54
+},
+
+"#lbl_key_serial": {
+	text: "Serienummer"
+},
+"#lbl_key_id": {
+	text: "ID"
+},
+"#lbl_key_opmerking": {
+	text: "Opmerking intern"
+},
+"#lbl_key_location": {
+	text: "Locatie informatie"
+},
+"#lbl_key_material": {
+	top: Alloy.CFG.Space.Small,
+	text: "Gebruikte materialen"
+},
+
+"#list_activity": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+}
+
+"#btn_add_product": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 60,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	title: "Opslaan",
+	borderColor: 'transparent',
+	borderWidth: 0,
+	borderRadius: 0,
+},

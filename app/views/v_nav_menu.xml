@@ -1,0 +1,47 @@
+<Alloy>
+	<Window id="v_nav_menu" module="xp.ui" role="leftWindow">
+		<View id="v_cont">
+			<!-- Drawer Header View Design -->
+			<View id="v_nav_drawer_header">
+				<View id="v_user_profile_cont">
+					<View id="v_profile_img_holder">
+						<ImageView id="ig_profile" />
+					</View>
+					<Label id="lbl_user_name" />
+					<Label id="lbl_user_role" />
+				</View>
+				<View id="v_seperator" />
+			</View>
+			<!-- ListView which holds Navigation Menu -->
+			<ListView id="list_nav_menu" defaultItemTemplate="template_menu">
+				<Templates>
+					<ItemTemplate name="template_menu" id="item_template_menu">
+						<View id="v_menu_cont">
+							<ImageView id="ig_menu_icon" bindId="itemImage" />
+							<Label id="lbl_menu_title" bindId="itemTitle" />
+							<!-- Badge Design -->
+							<View id="v_action_cont" bindId="itemBadgeContainer">
+								<Label id="lbl_badge" bindId="itemBadge" />
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<FooterView height="0" />
+				<ListSection id="list_sec_nav_menu">
+					<ListItem itemImage:image="images/menu/ic_home.png" itemTitle:text="Home" >
+					</ListItem>
+					<ListItem itemImage:image="images/menu/ic_favorite.png" itemTitle:text="Agenda" itemBadgeContainer:visible="true">
+					</ListItem>
+					<ListItem itemImage:image="images/menu/ic_cart.png" itemTitle:text="Forms"  itemBadgeContainer:visible="true">
+					</ListItem>
+					<ListItem itemImage:image="images/menu/ic_idea.png" itemTitle:text="Planning" >
+					</ListItem>
+				</ListSection>
+			</ListView>
+			<!-- View Holder for Actions -->
+			<View id="v_action_holder">
+				<Button id="btn_action_logout" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

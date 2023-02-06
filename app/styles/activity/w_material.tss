@@ -1,0 +1,123 @@
+"#w_material": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+
+"#v_activities_cont": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#v_list_header": {
+	top: 0,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	width: Ti.UI.FILL,
+	height: 48,
+	layout: 'horizontal'
+},
+"#list_activity": {
+	top: 48,
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+}
+
+
+
+
+
+//==== LIST VIEW ====//
+/* "#list_activities": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent",
+	width: 0,
+	height: 0
+},*/
+"#v_item_container_header": {
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	width: Ti.UI.FILL,
+	height: 48,
+	layout: 'horizontal'
+},
+".item_header_lbl": {
+	height: Ti.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: Alloy.CFG.Colors.tintColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+".item_lbl": {
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+".item_txf": {
+	left: 0,
+	right: 0,
+	height: 40,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION
+}
+"#item_qty": {
+	width: "24%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#txf_item_qty": {
+	value: "1",
+	width: "24%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#item_product": {
+	left: "2%",
+	width: "37%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+},
+"#item_number": {
+	width: "37%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+},
+
+
+"#template_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+}

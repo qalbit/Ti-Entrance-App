@@ -1,0 +1,61 @@
+<Alloy>
+	<Window id="w_send_product" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<View id="list_content">
+				<ScrollView id="scr_main_cont">
+					<!-- Products items listview -->
+					<ScrollView id="scrlist_products" />
+
+					<!-- Date -->
+					<View class="v_field_item" top="Alloy.CFG.Space.Normal">
+						<Label class="lbl_item" id="lbl_date" />
+						<!-- iOS Picker -->
+						<View class="lbl_txf_item" id="txf_date" onClick="doSetDate">
+							<Label id="txf_date_val" />
+						</View>
+					</View>
+
+					<!-- Arrival -->
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_arrival_time" />
+						<!-- iOS Picker -->
+						<View class="lbl_txf_item" id="txf_arrival_time" onClick="doArrivalTimeOpen">
+							<Label id="txf_arrival_val" />
+						</View>
+					</View>
+
+					<!-- Depart -->
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_departure_time" />
+						<!-- iOS Picker -->
+						<View class="lbl_txf_item" id="txf_depart_time" onClick="doDepTimeOpen">
+							<Label id="txf_depart_val" />
+						</View>
+					</View>
+					
+					<!-- Name -->
+					<View class="v_field_item" top="Alloy.CFG.Space.Normal">
+						<Label class="lbl_item" id="lbl_name" />
+						<TextField class="txf_item" id="txf_name_del" />
+					</View>
+
+					<!-- Email -->
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_email" />
+						<TextField class="txf_item" id="txf_email_del" />
+					</View>
+
+					<!-- Signature -->
+					<View class="v_field_item">
+						<View class="v_item_signature">
+							<Label class="lbl_item" id="lbl_signature" />
+						</View>
+						<ImageView id="ig_signature" onClick="doOpenPaintWin" />
+					</View>
+				</ScrollView>
+			</View>
+			<!-- Button Action -->
+			<Button id="btn_submit" onClick="doSendDataOnServer"></Button>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,100 @@
+"#w_clients": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	navBarHidden: false,
+	title: "Klanten"
+},
+
+"#v_cont": {
+	layout: 'vertical'
+},
+
+"#searchBar": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+
+//==== LIST VIEW ====//
+"#list_clients": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#template_clients": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#lbl_name": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+},
+"#v_additon_items": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#lbl_client_grp": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+},
+"#lbl_client_id": {
+	left: Alloy.CFG.Space.Small,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+},
+
+"#v_status_client": {
+	right: Alloy.CFG.Space.Small,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	backgroundColor: 'transparent'
+},
+
+// View that holds Element for Loader 
+"#v_loader": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.semiDarkShadowColor,
+	visible: false
+},
+// Loader UI
+"#act_loader": {
+	width: 42,
+	height: 42,
+	style: Titanium.UI.ActivityIndicatorStyle.PLAIN
+}

@@ -1,0 +1,37 @@
+<Alloy>
+	<Window id="w_delivery" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<RightNavButton platform="ios">
+			<ImageView class="fab_action" id="fab_action_add" onClick="doAddDevice" />
+		</RightNavButton>
+		<View id="v_cont">
+			<!-- Title Holder Tab -->
+			<View id="v_strip_title">
+				<Label id="lbl_title" />
+			</View>
+
+			<!-- Scrollable View Holder -->
+			<ScrollableView id="scb_holder" onScrollend="doScrollableEndView" />
+
+			<!-- Action Holder (Next/Previous) -->
+			<View id="v_strip_action">
+				<View id="v_action_prev" onClick="doScrollPagePrevious">
+					<View class="v_action_grp" left="4">
+						<ImageView class="ig_action" id="ig_action_prev" />
+						<Label class="lbl_action" id="lbl_action_prev" />
+					</View>
+					<Label class="lbl_page_title" id="lbl_page_prev" left="8" />
+				</View>
+				<View id="v_action_next" onClick="doScrollPageNext">
+					<View class="v_action_grp" right="4">
+						<Label class="lbl_action" id="lbl_action_next" />
+						<ImageView class="ig_action" id="ig_action_next" />
+					</View>
+					<Label class="lbl_page_title" id="lbl_page_next" right="8" />
+				</View>
+			</View>
+		</View>
+		<View id="v_loader">
+			<ActivityIndicator id="act_loader" />
+		</View>
+	</Window>
+</Alloy>

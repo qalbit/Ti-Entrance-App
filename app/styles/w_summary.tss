@@ -1,0 +1,72 @@
+"#w_summary": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	navBarHidden: false,
+	title: "Overzicht"
+},
+
+"#v_cont": {
+	bottom: 50,
+	layout: 'vertical'
+},
+
+// ====== Summary Label
+"#lbl_summary": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.CFG.Colors.lblDarkColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	text: "Overzicht"
+},
+
+// ====== Summary TextArea
+"#txa_summary": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: 200,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: Alloy.CFG.Colors.lblDarkColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'normal'
+	},
+	borderColor: Alloy.CFG.Colors.lblDarkColor,
+	borderWidth: '1px',
+	backgroundColor: 'transparent',
+	padding: {
+		top: Alloy.CFG.Space.Small,
+		left: Alloy.CFG.Space.Small,
+		right: Alloy.CFG.Space.Small,
+		bottom:Alloy.CFG.Space.Small,
+	},
+	hintText: "Overzicht"
+}
+
+
+// ====== Send  Action ===================
+"#btn_send": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 50,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	title: "Verder"
+},

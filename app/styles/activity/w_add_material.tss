@@ -1,0 +1,81 @@
+"#w_add_material": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	navBarHidden: false,
+	title: "Gebruikte materialen"
+},
+"#btn_checked": {
+	width: 24,
+	height: 24,
+	image: "/images/ic_checkmark.png"
+},
+
+"#v_cont": {
+	layout: "vertical"
+},
+
+"#searchBar": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+
+//==== LIST VIEW ====//
+"#list_activities": {
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#v_item_container_header": {
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	width: Ti.UI.FILL,
+	height: 54,
+	layout: 'horizontal'
+},
+".item_header_lbl": {
+	height: Ti.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: Alloy.CFG.Colors.tintColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+},
+".item_lbl": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+},
+"#item_serial": {
+	width: "42%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+},
+"#item_product": {
+	width: "58%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+},
+
+"#template_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+}

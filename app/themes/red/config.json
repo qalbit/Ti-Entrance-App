@@ -1,0 +1,26 @@
+{
+    "global": {
+        "Colors": {
+            "colorPrimary": "#f44336",
+            "colorPrimaryDark": "#aa2e25",
+            "colorAccent": "#ffc400",
+            "winBg": "#FDF7F7",
+            "winBgDark": "#444444",
+            "bgLightGray": "#EAEAEA",
+            "tintColor": "#FFFFFF",
+            "tfLightBgColor": "#60FFFFFF",
+            "tfLightColor": "#FFFFFF",
+            "tfDarkColor": "#000000",
+            "lblDefaultColor": "#444444",
+            "lblLightColor": "#DDDDDD",
+            "lblSemiLightColor": "#70DDDDDD",
+            "lblDarkColor": "#000000",
+            "lblSemiDarkColor": "#70000000",
+            "semiDarkShadowColor": "#40666666",
+            "semiDarkColor": "60000000",
+            "lblWhiteColor": "#FFFFFF",
+            "calDatePrevColor": "#19000000",
+            "calDateCurrentColor": "#aa2e25"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="w_summary" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<!-- NORMAL TEXTAREA -->
+			<Label id="lbl_summary" />
+			<TextArea id="txa_summary"></TextArea>
+		</View>
+		<Button id="btn_send" />
+	</Window>
+</Alloy>

@@ -1,0 +1,235 @@
+'Window': {
+	navBarHidden: true,
+	fullscreen: false,
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	backgroundImage: "/images/ic_bg_common.png"
+},
+'Window[formFactor=tablet]': {
+	orientationModes: [Titanium.UI.PORTRAIT, Titanium.UI.UPSIDE_PORTRAIT, Titanium.UI.LANDSCAPE_LEFT, Titanium.UI.LANDSCAPE_RIGHT]
+}
+'Window[platform=android]': {
+	orientationModes: [Titanium.UI.PORTRAIT, Titanium.UI.UPSIDE_PORTRAIT]
+}
+'Window[platform=ios]': {
+	translucent: false,
+	barColor: Alloy.CFG.Colors.colorPrimary,
+	statusBarStyle: Alloy.CFG.StatusBarStyle,
+	navTintColor: Alloy.CFG.Colors.tintColor,
+	titleAttributes: {
+		color: Alloy.CFG.Colors.tintColor
+	},
+	hidesBarsOnSwipe: false,
+	hideShadow: false,
+	backButtonTitle: '',
+	orientationModes: [Titanium.UI.PORTRAIT, Titanium.UI.UPSIDE_PORTRAIT]
+},
+'LeftNavButton': {
+	left: 8	
+},
+'RightNavButton': {
+	right: 8	
+},
+
+'#v_cont': {
+	top: 0,
+	bottom: 0,
+	left: 0,
+	right: 0,
+},
+'TextField': {
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: 44,
+	backgroundColor: Alloy.CFG.Colors.tfLightBgColorPrimary,
+	borderRadius: Alloy.CFG.Space.TwoDot,
+	borderWidth: '1px',
+	borderColor: Alloy.CFG.Colors.lblLightColor,
+	hintTextColor: Alloy.CFG.Colors.tfLightColor,
+	padding: {
+		left: Alloy.CFG.Space.Normal,
+		right: Alloy.CFG.Space.Normal
+	},
+	autocorrect: false,
+	autocapitalization: false,
+	tintColor: Alloy.CFG.Colors.lblLightColor,
+	color: Alloy.CFG.Colors.tfLightColor
+},
+'Button': {
+	width: 160,
+	height: 40,
+	borderRadius: Alloy.CFG.Space.TwoDot,
+	backgroundColor: 'transparent',
+	color: Alloy.CFG.Colors.lblLightColor,
+	borderWidth: '1px',
+	borderColor: Alloy.CFG.Colors.lblLightColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+}
+
+/**
+ * 	Fab Action Design
+ */
+"#v_action_fab": {
+	bottom: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: 60,
+	height: 60
+},
+".fab_action": {
+	width: 50,
+	height: 50,
+	image: "/images/ic_fab_add.png"	
+},
+
+/**
+ * 	Activity Scrollview
+ */
+".activity_scrollview": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false
+},
+".v_field_item_subtitle": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	bottom: Alloy.CFG.Space.Normal,
+	layout: 'vertical',
+},
+".v_field_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	bottom: Alloy.CFG.Space.Normal,
+	layout: 'vertical',
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal
+},
+".lbl_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	text: "Test Item"
+},
+".lbl_item_title": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+".lbl_item_subtitle": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor
+}
+".lbl_item_val": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Test Item"
+},
+".txf_item": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	hintTextColor: Alloy.CFG.Colors.lblDefaultColor,
+	borderColor: Alloy.CFG.Colors.lblDarkColor,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor
+},
+
+".lbl_txf_item": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	borderColor: Alloy.CFG.Colors.lblSemiDarkColor,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor
+},
+".txa_item": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 126,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	hintTextColor: Alloy.CFG.Colors.lblDefaultColor,
+	borderColor: Alloy.CFG.Colors.lblDarkColor,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor
+},
+".btn_save_common": {
+	top: Alloy.CFG.Space.Small,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	backgroundColor: Alloy.CFG.Colors.colorAccent,
+}
+
+".v_act_header": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	bottom: Alloy.CFG.Space.Normal,
+	layout: 'vertical',
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal
+},
+".lbl_act_header": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	bottom: Alloy.CFG.Space.Tiny,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal
+	},
+	color: Alloy.CFG.Colors.tfDarkColor,
+	text: "Test Header"
+},
+".v_header_seperator": {
+	width: Ti.UI.FILL,
+	height: 1,
+	backgroundColor: Alloy.CFG.Colors.semiDarkShadowColor
+},
+'SearchBar[platform=ios]': {
+	barColor: Alloy.CFG.Colors.colorPrimary,
+	tintColor: Alloy.CFG.Colors.searchBarTintColor,
+	color: Alloy.CFG.Colors.searchBarTintColor,
+}

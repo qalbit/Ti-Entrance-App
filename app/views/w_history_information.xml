@@ -1,0 +1,43 @@
+<Alloy>
+	<Window id="w_history_information" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<ScrollView id="scr_cont">
+				<View class="v_item_container" top="Alloy.CFG.Space.Normal">
+					<Label class="lbl_item_key" id="item_title" />
+					<Label class="lbl_item_val" id="item_title_val" />
+				</View>
+				<View class="v_item_container" top="Alloy.CFG.Space.Huge">
+					<Label class="lbl_item_key" id="item_name" />
+					<Label class="lbl_item_val" id="item_name_val" />
+				</View>
+				<View class="v_item_container" top="Alloy.CFG.Space.Small">
+					<Label class="lbl_item_key" id="item_date" />
+					<Label class="lbl_item_val" id="item_date_val" />
+				</View>
+				<View class="v_item_container" top="Alloy.CFG.Space.Small">
+					<Label class="lbl_item_key" id="item_start" />
+					<Label class="lbl_item_val" id="item_start_val" />
+				</View>
+				<View class="v_item_container" top="Alloy.CFG.Space.Small">
+					<Label class="lbl_item_key" id="item_end" />
+					<Label class="lbl_item_val" id="item_end_val" />
+				</View>
+				
+				<View class="v_seperator" />
+				
+				<View class="v_item_container">
+					<Label class="lbl_item_key" id="item_faildesc" />
+					<Label class="lbl_item_val" id="item_faildesc_val" />
+				</View>
+				<View class="v_item_container" top="Alloy.CFG.Space.Small">
+					<Label class="lbl_item_key" id="item_workdesc" />
+					<Label class="lbl_item_val" id="item_workdesc_val" />
+				</View>
+				<View class="v_item_container" top="Alloy.CFG.Space.Small" bottom="Alloy.CFG.Space.Small">
+					<Label class="lbl_item_key" id="item_desc" />
+					<Label class="lbl_item_val" id="item_desc_val" />
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

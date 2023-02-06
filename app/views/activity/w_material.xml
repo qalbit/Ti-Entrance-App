@@ -1,0 +1,32 @@
+<Alloy>
+	<View id="w_material">
+		<View id="v_activities_cont">
+			<View id="v_list_header">
+				<Label class="item_header_lbl" id="item_qty" text="Hoeveelheid" />
+				<Label class="item_header_lbl" id="item_product" text="Product" />
+				<Label class="item_header_lbl" id="item_number" text="Artikelnummer" />
+			</View>
+			<ScrollView id="list_activity" />
+		</View>
+		
+		<!-- <ListView id="list_activities" defaultItemTemplate="template_item" onItemclick="doClickItemMaterial">
+			<HeaderView id="list_header_activities">
+				<View id="v_item_container_header">
+					<Label class="item_header_lbl" id="item_qty" text="Hoeveelheid" />
+					<Label class="item_header_lbl" id="item_product" text="Product" />
+					<Label class="item_header_lbl" id="item_number" text="Artikelnummer" />
+				</View>
+			</HeaderView>
+			<Templates>
+				<ItemTemplate name="template_item" id="template_item">
+					<View id="v_item_container">
+						<TextField class="item_txf" id="txf_item_qty" bindId="qty" onReturn="doChangeTextFieldValue"></TextField>
+						<Label class="item_lbl" id="item_product" text="Product" bindId="product" />
+						<Label class="item_lbl" id="item_number" text="Artikelnummer" bindId="number" />
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="list_section_activities" />
+		</ListView> -->
+	</View>
+</Alloy>

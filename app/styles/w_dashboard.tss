@@ -1,0 +1,269 @@
+"#w_dashboard": {
+	// backgroundImage: "",
+	navBarHidden: false,
+	title: "Home"
+},
+/**
+* 	Left Navigation button
+*/
+"#btn_left_toggle": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_menu.png"
+},
+/**
+ * 	Right Navigation button
+ */
+"#btn_right_refresh": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_refresh.png"
+},
+/**
+* 	Full Width Dashboard Container Image
+*/
+/* "#v_cont_img": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: 220,
+	borderRadius: Alloy.CFG.Space.Small,
+	backgroundColor: Alloy.CFG.Colors.winBgDark
+}, */
+/**
+* 	Dashboard Main Image
+*/
+/* "#dashboard_image": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	image: "https://ak.picdn.net/assets/cms/14c40a5a7a7f50788cf9e346071ab49ad1201b12-17d705f0349ed08f5387b39c7644054a59affe52-LOHP_vector_module_shutterstock_307324316-min.jpg"
+}, */
+
+/**
+ * 	Data Holder Planner with Title & data
+ */
+"#v_data_holder": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "transparent",
+	layout: 'vertical',
+},
+
+/**
+ * 	Welcome Holder
+ */
+"#v_wc_holder": {
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	top: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+},
+"#lbl_welcome": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.XLarge,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	text: "Welcome home,"
+},
+"#lbl_clientname": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.X2Large,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	text: "Adam Smith"
+},
+
+/**
+ * 	Welcome header title
+ */
+"#lbl_header": {
+	top: Alloy.CFG.Space.Xhuge,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Large,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblSemiLightColor,
+	text: "VANDAAG"
+},
+
+/**
+ * 	ListView Planner Design
+ */
+"#list_planner": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+/**
+ * 	ListItem Content Template Design
+ */
+"#item_template_content": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: Titanium.UI.SELECTION_STYLE_NONE
+},
+/**
+ * 	Comment ListItem Container design
+ */
+"#item_container": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+
+"#ig_priority": {
+	width: 20,
+	height: 20,
+	backgroundColor: "transparent",
+	image: "/images/ic_alert.png",
+	right: 0,
+}
+
+"#v_time_holder": {
+	left: 0,
+	top: 0,
+	width: 60,
+	height: 60,
+},
+"#v_time_line": {
+	left: 0,
+	width: 10,
+	height: Ti.UI.FILL,
+},
+"#v_ig_round_border": {
+	top: 0,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	borderWidth: 1,
+	backgroundColor: 'transparent',
+	borderColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_ig_line": {
+	top: 12,
+	width: 2,
+	height: 36,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_ig_round_fill": {
+	bottom: 0,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	borderWidth: 0,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_time_content": {
+	left: 10,
+	width: 90,
+	height: Ti.UI.FILL,
+},
+"#lbl_start": {
+	top: '-3',
+	left: 3,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "09:00",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+"#lbl_end": {
+	bottom: '-3',
+	left: 3,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "15:00",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+
+"#item_holder": {
+	top: 0,
+	left: 70,
+	right: 20,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+	
+},
+"#item_type": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "Green Room",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+"#item_title": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	text: "PD Team Daily Sync Up",
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+
+"#item_subtitle": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+
+"#item_location": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "",
+	color: Alloy.CFG.Colors.tfLightColor
+},
+
+
+"#v_progressbar_cont": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: '#44000000',
+},

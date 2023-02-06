@@ -1,0 +1,130 @@
+"#w_delivery": {
+	title: "Werkbon toevoegen",
+	navBarHidden: false
+},
+"#fab_action_add": {
+	width: 36,
+	height: 36,
+	image: "images/ic_add.png"
+}
+/**
+ * 	Strip Title 
+ */
+"#v_strip_title": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 40,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+"#lbl_title": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	text: "Welcome"
+},
+
+/**
+ * 	Scrollable View Holder
+ */
+"#scb_holder": {
+	top: 40,
+	bottom: 80,
+	backgroundColor: Alloy.CFG.Colors.tintColor,
+	padding: {
+		left: Alloy.CFG.Space.Normal,
+		right: Alloy.CFG.Space.Normal,
+		top: Alloy.CFG.Space.Normal,
+		bottom: Alloy.CFG.Space.Normal
+	},
+	showPagingControl: false,
+	scrollingEnabled: false
+}
+
+/**
+ * 	Strip Action Holder 
+ */
+"#v_strip_action": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 80,
+	backgroundColor: Alloy.CFG.Colors.semiDarkColor
+},
+"#v_action_prev": {
+	width: "50%",
+	height: 50,
+	left: Alloy.CFG.Space.Small,
+	layout: 'vertical'
+},
+"#v_action_next": {
+	width: "50%",
+	height: 50,
+	right: Alloy.CFG.Space.Small,
+	layout: 'vertical'
+},
+".v_action_grp": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout:'horizontal'
+},
+".ig_action": {
+	width: 26,
+	height: 26
+},
+".lbl_action": {
+	left: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+"#ig_action_prev": {
+	image: "/images/ic_prev.png"
+},
+"#ig_action_next": {
+	image: "/images/ic_next.png"
+},
+"#lbl_action_prev": {
+	text: "Vorige"
+},
+"#lbl_action_next": {
+	text: "Volgende"
+},
+".lbl_page_title": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+"#lbl_page_prev": {
+	text: "Page Previous"
+},
+"#lbl_page_next": {
+	text: "Page Next"
+},
+
+
+
+// Loading Indicator UI
+"#v_loader": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.semiDarkShadowColor,
+	visible: false
+},
+
+"#act_loader": {
+	width: 42,
+	height: 42,
+	style: Titanium.UI.ActivityIndicatorStyle.PLAIN
+}

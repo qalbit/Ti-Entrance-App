@@ -1,0 +1,92 @@
+<Alloy>
+	<NavigationWindow role="centerWindow" platform="ios">
+		<Window id="w_dashboard">
+			<LeftNavButton>
+				<Button id="btn_left_toggle" onClick="doClickToggle" />
+			</LeftNavButton>
+			<RightNavButton>
+				<Button id="btn_right_refresh" onClick="doClickRefreshAPI" />
+			</RightNavButton>
+			<View id="v_cont">
+				<View id="v_data_holder">
+					<View id="v_wc_holder">
+						<Label id="lbl_welcome" />
+						<Label id="lbl_clientname" />
+					</View>
+					<Label id="lbl_header" />
+					<ListView id="list_planner" defaultItemTemplate="template_content" onItemclick="doClickTemplateItem">
+						<Templates>
+							<ItemTemplate id="item_template_content" name="template_content">
+								<View id="item_container" bindId="mainHolder">
+									<View id="v_time_holder">
+										<View id="v_time_line">
+											<View id="v_ig_round_border" />
+											<View id="v_ig_line" />
+											<View id="v_ig_round_fill" />
+										</View>
+										<View id="v_time_content">
+											<Label id="lbl_start" bindId="timeStart" />
+											<Label id="lbl_end" bindId="timeEnd" />
+										</View>
+									</View>
+									<!-- Holder which holds Activity and Location -->
+									<View id="item_holder">
+										<Label id="item_type" bindId="itemType" />
+										<Label id="item_title" bindId="itemTitle" />
+										<Label id="item_subtitle" bindId="itemSubtitle" />
+										<Label id="item_location" bindId="itemLocation" />
+									</View>
+									
+									<!-- Priority view -->
+									<ImageView id="ig_priority" bindId="itemPriority"></ImageView>
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="listsec_events" />
+					</ListView>
+				</View>
+			</View>
+		</Window>
+	</NavigationWindow>
+	<Window id="w_dashboard" module="xp.ui" platform="android">
+		<View id="v_cont">
+			<View id="v_data_holder">
+				<View id="v_wc_holder">
+					<Label id="lbl_welcome" />
+					<Label id="lbl_clientname" />
+				</View>
+				<Label id="lbl_header" />
+				<ListView id="list_planner" defaultItemTemplate="template_content" onItemclick="doClickTemplateItem">
+					<Templates>
+						<ItemTemplate id="item_template_content" name="template_content">
+							<View id="item_container" bindId="mainHolder">
+								<View id="v_time_holder">
+									<View id="v_time_line">
+										<View id="v_ig_round_border" />
+										<View id="v_ig_line" />
+										<View id="v_ig_round_fill" />
+									</View>
+									<View id="v_time_content">
+										<Label id="lbl_start" bindId="timeStart" />
+										<Label id="lbl_end" bindId="timeEnd" />
+									</View>
+								</View>
+								
+								<View id="item_holder">
+									<Label id="item_type" bindId="itemType" />
+									<Label id="item_title" bindId="itemTitle" />
+									<Label id="item_subtitle" bindId="itemSubtitle" />
+									<Label id="item_location" bindId="itemLocation" />
+								</View>
+								
+								<ImageView id="ig_priority" bindId="itemPriority" />
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<FooterView height="0" />
+					<ListSection id="listsec_events" />
+				</ListView>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,238 @@
+"#w_form": {
+	backgroundImage: "",
+	navBarHidden: false,
+	title: "Form"
+},
+/**
+ * 	Left Navigation button
+ */
+"#btn_left_toggle": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_menu.png"
+},
+
+/**
+ * 	Scrollable View which Holds UI for Tab Contents
+ */
+"#scrb_holder": {
+	top: 50,
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.bgLightGray,
+	scrollingEnabled: false
+},
+
+"#tab_content_1": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+},
+
+"#tab_content_2": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+},
+
+"#tab_content_3": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+},
+
+
+/**
+ * 	ListView for Content Holder 
+ */
+"#listview_form_1": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+"#listview_form_2": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+"#listview_form_3": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+"#item_template_form_list": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#item_container": {
+	top: 12,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+"#item_content_holder": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#item_main_holder": {
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+"#ig_main": {
+	top: 0,
+	left: 0,
+	width: 45,
+	height: 45,
+	borderRadius: Alloy.CFG.Space.TwoDot,
+	backgroundColor: 'lightgray',
+	image: "https://s3-media2.fl.yelpcdn.com/bphoto/mclJlc4SAd9OLc7y2ZwMsg/ls.jpg"
+},
+
+"#main_title_holder": {
+	top: 0,
+	bottom: Alloy.CFG.Space.Normal,
+	left: 61,
+	right: 105,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#main_title": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.XLarge
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Fresh Sushi"
+},
+"#main_subtitle_holder": {
+	top: Alloy.CFG.Space.TwoDot,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#main_subtitle_key": {
+	left: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Ordered by "
+},
+"#main_subtitle_value": {
+	left: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.colorPrimary,
+	text: "Abidhusain Chidi"
+},
+
+"#main_status_holder": {
+	top: 0,
+	right: 0,
+	width: 89,
+	height: Ti.UI.SIZE
+},
+"#lbl_status": {
+	left: 1,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 40,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	borderColor: Alloy.CFG.Colors.bgLightGray,
+	borderWidth: 2,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text: "Pending"
+},
+"#main_separator": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 1,
+	backgroundColor: Alloy.CFG.Colors.bgLightGray
+},
+
+"#item_detail_holder": {
+	top: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#detail_1": {
+	bottom: Alloy.CFG.Space.Small,
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE
+},
+"#detail_2": {
+	bottom: Alloy.CFG.Space.Small,
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE
+},
+"#detail_3": {
+	bottom: Alloy.CFG.Space.Small,
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE
+},
+"#detail_4": {
+	bottom: Alloy.CFG.Space.Small,
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE
+},
+"#detail_5": {
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE
+},
+".detail_content_holder": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+".detail_key": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Order Number : "
+},
+".detail_val": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "234345235"
+}

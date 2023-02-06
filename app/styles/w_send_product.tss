@@ -1,0 +1,130 @@
+"#w_send_product": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: false,
+	title: "Overzicht",
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	backgroundImage: ""
+},
+
+"#list_content": {
+	top: Alloy.CFG.Space.Small,
+	bottom: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	layout: 'vertical'
+}
+"#scr_main_cont": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+},
+"#scrlist_products": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+},
+
+"#lbl_date": {
+	text: "Datum"
+},
+
+"#txf_date_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#lbl_arrival_time": {
+	text: "Aankomst"
+},
+"#txf_arrival_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#lbl_departure_time": {
+	text: "Vertrek"
+},
+"#txf_depart_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+
+"#lbl_name": {
+	text: "Naam"
+},
+"#txf_name_del": {
+	hintText: "Naam"
+},
+"#lbl_email": {
+	text: "E-mail"
+},
+"#txf_email_del": {
+	hintText: "E-mail"
+},
+"#lbl_signature": {
+	text: "Handtekening"
+},
+"#ig_signature": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Titanium.UI.FILL,
+	height: 140,
+	borderColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+".lbl_item": {
+	left: 0,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE	
+},
+
+".v_item_signature": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+
+"#btn_submit": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 60,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	title: "Versturen",
+	borderColor: 'transparent',
+	borderWidth: 0,
+	borderRadius: 0,
+	visible: true
+},

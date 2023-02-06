@@ -1,0 +1,13 @@
+{
+	"id": "qalbit.photoselection",
+	"name": "qalbit.photoselection",
+	"description" : "Photo Selection or Capture by QalbIT Solution",
+	"author": "Abidhusain Chidi",
+	"version": "1.0.0",
+	"copyright":"Copyright (c) 2020",
+	"license":"MIT License",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"photo selection, photo capture, gallery",
+	"platforms":"android,ios"
+}

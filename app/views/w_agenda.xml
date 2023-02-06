@@ -1,0 +1,114 @@
+<Alloy>
+	<NavigationWindow role="centerWindow" module="xp.ui" platform="ios">
+		<Window id="w_agenda">
+			<LeftNavButtons>
+				<View id="v_left_btn_cont">
+					<Button id="btn_left_toggle" onClick="doClickToggle" />
+					<View id="v_left_month">
+						<Label id="lbl_left_month" onClick="doClickMonthNavBtn" />
+						<Button id="btn_left_month" onClick="doClickMonthNavBtn" />
+					</View>
+				</View>
+			</LeftNavButtons>
+			<RightNavButton>
+				<Button id="btn_right_refresh" onClick="doClickRefreshAPI" />
+			</RightNavButton>
+			<View id="v_cont">
+				<!-- Event List by Month -->
+				<ListView id="list_month_events" onItemclick="doItemClickEvents">
+					<Templates>
+						<ItemTemplate id="item_template_month_list" name="template_month_list">
+							<View id="v_item_cont">
+								<View id="v_item_date_cont" bindId="itemDateContainer">
+									<Label id="lbl_item_day" bindId="itemDay" />
+									<Label id="lbl_item_day_week" bindId="itemDayWeek" />
+								</View>
+								<View id="v_item_event_type_cont" bindId="itemEventTypeCont">
+									<Label id="lbl_event_title" bindId="itemEventTitle" />
+									<Label id="lbl_event_subtitle" bindId="itemEventSubtitle" />
+									<Label id="item_location" bindId="itemLocation" />
+									<Label id="lbl_event_type" bindId="itemEventType" />
+								</View>
+							</View>
+						</ItemTemplate>
+						<ItemTemplate id="item_template_no_data" name="template_no_data">
+							<View id="v_item_cont_no_data">
+								<View id="v_no_data_holder">
+									<ImageView id="ig_no_data" />
+									<Label id="lbl_no_data" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<FooterView height="0" />
+					<ListSection id="list_sec_event" />
+				</ListView>
+				<!-- Event List By Week -->
+				<View id="v_week_events_cont">
+					<View id="v_week_day_name_holder">
+						<Label class="lbl_week_day_name" text="S" />
+						<Label class="lbl_week_day_name" text="M" />
+						<Label class="lbl_week_day_name" text="T" />
+						<Label class="lbl_week_day_name" text="W" />
+						<Label class="lbl_week_day_name" text="T" />
+						<Label class="lbl_week_day_name" text="F" />
+						<Label class="lbl_week_day_name" text="S" />
+					</View>
+					<View id="v_week_events_holder_cont" />
+					<!-- <View id="v_week_drag_cont">
+					<Button id="btn_drag_week_holder" />
+					</View> -->
+				</View>
+			</View>
+		</Window>
+	</NavigationWindow>
+	<Window id="w_agenda" module="xp.ui" platform="android">
+		<View id="v_cont">
+			<!-- Event List by Month -->
+			<ListView id="list_month_events" onItemclick="doItemClickEvents">
+				<Templates>
+					<ItemTemplate id="item_template_month_list" name="template_month_list">
+						<View id="v_item_cont">
+							<View id="v_item_date_cont" bindId="itemDateContainer">
+								<Label id="lbl_item_day" bindId="itemDay" />
+								<Label id="lbl_item_day_week" bindId="itemDayWeek" />
+							</View>
+							<View id="v_item_event_type_cont" bindId="itemEventTypeCont">
+								<Label id="lbl_event_title" bindId="itemEventTitle" />
+								<Label id="lbl_event_subtitle" bindId="itemEventSubtitle" />
+								<Label id="item_location" bindId="itemLocation" />
+								<Label id="lbl_event_type" bindId="itemEventType" />
+							</View>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate id="item_template_no_data" name="template_no_data">
+						<View id="v_item_cont_no_data">
+							<View id="v_no_data_holder">
+								<ImageView id="ig_no_data" />
+								<Label id="lbl_no_data" />
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<FooterView height="0" />
+				<ListSection id="list_sec_event" />
+			</ListView>
+			<!-- Event List By Week -->
+			<View id="v_week_events_cont">
+				<View id="v_week_day_name_holder">
+					<Label class="lbl_week_day_name" text="S" />
+					<Label class="lbl_week_day_name" text="M" />
+					<Label class="lbl_week_day_name" text="T" />
+					<Label class="lbl_week_day_name" text="W" />
+					<Label class="lbl_week_day_name" text="T" />
+					<Label class="lbl_week_day_name" text="F" />
+					<Label class="lbl_week_day_name" text="S" />
+				</View>
+				<View id="v_week_events_holder_cont" />
+				<!-- <View id="v_week_drag_cont">
+				<Button id="btn_drag_week_holder" />
+				</View> -->
+			</View>
+		</View>
+	</Window>
+</Alloy>

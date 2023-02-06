@@ -1,0 +1,115 @@
+<Alloy>
+	<Window id="w_add_device" onClose="doCloseWindow" onOpen="doOpenWindow">
+		<RightNavButton platform="ios">
+			<Button class="fab_action" id="btn_checked" onClick="doSaveAllDeviceInfo" />
+		</RightNavButton>
+		<View id="v_cont">
+			<ScrollView class="activity_scrollview">
+				<View id="v_activity_container">
+					<!-- DEVICE -->
+					<View class="v_act_header">
+						<Label class="lbl_act_header" id="lbl_header_device" />
+						<View class="v_header_seperator" />
+					</View>
+					<View class="v_field_item">
+						<View class="v_field_item_subtitle">
+							<Label class="lbl_item" id="lbl_item_name" />
+							<TextField class="txf_item" id="txf_item_name" />
+						</View>
+						<View class="v_field_item_subtitle">
+							<Label class="lbl_item" id="lbl_item_id" />
+							<TextField class="txf_item" id="txf_item_id" />
+						</View>
+						<View class="v_field_item_subtitle" id="v_workform_item_tellerstand">
+							<Label class="lbl_item" id="lbl_item_tellerstand" />
+							<TextField class="txf_item" id="txf_item_tellerstand" />
+						</View>
+						<!-- <View class="v_field_item_subtitle">
+							<Label class="lbl_item" id="lbl_item_serial" />
+							<TextField class="txf_item" id="txf_item_serial" />
+						</View> -->
+					</View>
+					<!-- PERFORMANCE -->
+					<View class="v_act_header">
+						<Label class="lbl_act_header" id="lbl_header_performance" />
+						<View class="v_header_seperator" />
+					</View>
+					
+					<!-- Werkzaamheden -->
+					<!-- <View class="v_field_item" onClick="doShowActivity">
+						<Label class="lbl_item" id="lbl_activity" />
+						<TextField class="txf_item" id="txf_activity" />
+					</View> -->
+					<!-- <View class="v_field_item">
+						<ScrollView id="v_activity_list"></ScrollView>
+					</View> -->
+					
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_descr_malfunc" />
+						<TextArea class="txa_item" id="txf_descr_malfunc"></TextArea> <!-- Omschrijving storing -->
+					</View>
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_work_performed" />
+						<TextArea class="txa_item" id="txa_work_performed"></TextArea> <!-- Uitgevoerde werkzaamheden -->
+					</View>
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_remark" />
+						<TextArea class="txa_item" id="txa_remark"></TextArea> <!-- Opmerking (extern) -->
+					</View>
+					<View class="v_field_item">
+						<Label class="lbl_item" id="lbl_remark_int" />
+						<TextArea class="txa_item" id="txa_remark_int"></TextArea> <!-- Opmerking (intern) -->
+					</View>
+					<!-- <View class="v_field_item" onClick="doAddOptionsCleaningAgents">
+						<Label class="lbl_item" id="lbl_clining_agent" />
+						<View class="v_cont_spe_device">
+							<Label class="lbl_cust_item" id="lbl_clining_agent_val" />
+						</View>
+					</View> -->
+					
+					<!--  Soort/type reinigingsmiddelen/Ontharding -->
+					<!-- <View class="v_field_item">
+						<Label class="lbl_item" id="lbl_type_agent" />
+						<TextField class="txf_item" id="txf_type_agent" />
+					</View> -->
+					<!-- <View class="v_field_item" onClick="doAddOptionsDeviceContaminated">
+						<Label class="lbl_item" id="lbl_device_contaminated" />
+						<View class="v_cont_spe_device">
+							<Label class="lbl_cust_item" id="lbl_device_contaminated_val" />
+						</View>
+					</View> -->
+					<View class="v_field_item" onClick="doAddOptionsDeviceMolest">
+						<Label class="lbl_item" id="lbl_device_molest" />
+						<View class="v_cont_spe_device">
+							<Label class="lbl_cust_item" id="lbl_device_molest_val" />
+						</View>
+					</View>
+					<View class="v_field_item" onClick="doAddOptionsDeviceAgreement">
+						<Label class="lbl_item" id="lbl_agreement" />
+						<View class="v_cont_spe_device">
+							<Label class="lbl_cust_item" id="lbl_agreement_val" />
+						</View>
+					</View>
+
+					<!-- Materials Items -->
+					<View class="v_cont_material" id="v_material_cont">
+						<View class="v_cont_mat_add" onClick="doAddMultipleMaterial">
+							<Label class="lbl_item" id="lbl_select_material" />
+							<Label id="lbl_select_photo_add" />
+						</View>
+						<ScrollView id="list_activity" />
+					</View>
+
+					<!-- Multiple Photo Selection -->
+					<View class="v_field_item" id="v_add_multiple">
+						<View id="v_add_photo_cont" class="v_cont_photo_add" onClick="doAddMultiplePhotos">
+							<Label class="lbl_item" id="lbl_select_photo" />
+							<Label id="lbl_select_photo_add" />
+						</View>
+						<ScrollView id="scr_ig_container"></ScrollView>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

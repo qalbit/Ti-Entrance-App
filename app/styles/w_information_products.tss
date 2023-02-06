@@ -1,0 +1,141 @@
+"#w_information_products": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: false,
+	title: "Productlijst",
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	backgroundImage: ""
+},
+
+".v_title_cont": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: 0,
+	height: 0
+},
+".key": {
+	left: 0,
+	top: 0,
+	width: 120,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+
+"#lbl_product_key": {
+	text: "Products"
+},
+
+
+/** ListView Products Design */
+"#list_products": {
+	top: Alloy.CFG.Space.Small,
+	bottom: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+/**	ListItem Content Template Design */
+"#item_template_content_product": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: 'none'
+},
+
+/** Comment ListItem Container design */
+"#item_container_product": {
+	top: Alloy.CFG.Space.Tiny,
+	bottom: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	backgroundColor: Alloy.CFG.Colors.bgLightGray,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+"#item_holder_product": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#item_is_completed": {
+	top: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: 26,
+	height: 26,
+	image: "/images/ic_checkmark_primary.png",
+	visible:false
+},
+"#item_name": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	text: "PD Team Daily Sync Up",
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#item_serial": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'normal'
+	},
+	text: "Description",
+	color: Alloy.CFG.Colors.lblSemiDarkColor
+},
+"#item_location": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'normal'
+	},
+	text: "Description",
+	color: Alloy.CFG.Colors.lblSemiDarkColor
+},
+"#item_desc": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'normal'
+	},
+	text: "Description",
+	color: Alloy.CFG.Colors.lblSemiDarkColor
+},
+/** ListView Products Design End Here */
+
+"#btn_submit": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 60,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	title: "Verder",
+	borderColor: 'transparent',
+	borderWidth: 0,
+	borderRadius: 0,
+	visible: true
+},

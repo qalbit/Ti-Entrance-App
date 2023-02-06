@@ -1,0 +1,36 @@
+<Alloy>
+	<ListView id="listview" onItemclick="doListviewItemClick">
+		<HeaderView id="listheader">
+			<View id="lh_cont"></View>
+		</HeaderView>
+		
+		<Templates>
+			<ItemTemplate name="template_three" id="template_three">
+				<View id="it_cont" bindId="itemContainer">
+					<View id="v_cont_1" bindId="vItemContainer1">
+						<Label id="lbl_item_1" bindId="itemArtical" />
+					</View>
+					
+					<View id="v_cont_2" bindId="vItemContainer2">
+						<Label id="lbl_item_2" bindId="itemProduct" />
+					</View>
+					
+					<View id="v_cont_3" bindId="vItemContainer3">
+						<View id="btn_add_item" bindId="itemAddProduct">
+							<Label id="lbl_add_item" bindId="itemAddProductTitle" />
+						</View>
+						<!-- <Button id="btn_add_item" bindId="itemAddProduct" /> -->
+						<View id="v_action_qty" bindId="itemActionQtyCont">
+							<ImageView id="btn_qty_remove" bindId="itemRemoveQty" />
+							<Label id="lbl_qty" bindId="itemQty" />
+							<ImageView id="btn_qty_add" bindId="itemAddQty" />
+						</View>
+					</View>
+					
+				</View>
+			</ItemTemplate>
+		</Templates>
+		
+		<ListSection id="listsection" />
+	</ListView>
+</Alloy>

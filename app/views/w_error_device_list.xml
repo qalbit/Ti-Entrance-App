@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="w_error_device_list" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<!-- DEVICES LIST -->
+			<ScrollView id="scr_items" />
+			<!-- Image Selection -->
+			<Widget src="qalbit.photoselection" id="photoSelection" onRefresh="doRefreshImages"></Widget>
+		</View>
+		<Button id="btn_send_error" onClick="doSendErrorCode" />
+	</Window>
+</Alloy>

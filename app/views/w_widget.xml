@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="w_widget">
+		<Widget id="myalert" src="myalert" onValueAdded="doValueAddedQty" />
+		<Widget id="mylist" src="mylistview" onQtypopup="doOpenQtyPopup"></Widget>
+	</Window>
+</Alloy>

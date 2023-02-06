@@ -1,0 +1,35 @@
+<Alloy>
+	<Window id="w_register" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<ScrollView id="scr_cont">
+				<View id="v_elem_holder">
+					<!-- Dynamic logo Comes here -->
+					<ImageView id="ig_logo" />
+					<!-- TextField that holds Company Name -->
+					<TextField id="txf_companyname" onReturn="doFocusContactField" />
+					<!-- TextField that holds Contact Person -->
+					<TextField id="txf_contactperson" onReturn="doFocusEmail" />
+					<!-- TextField that holds Email -->
+					<TextField id="txf_email" onReturn="doFocusPhone" />
+					<!-- TextField that holds Phone number -->
+					<TextField id="txf_phone">
+						<KeyboardToolbar platform="ios">
+							<Toolbar>
+								<Items>
+									<FlexSpace />
+									<Button id="btn_next" onClick="doClickRegister" />
+								</Items>
+							</Toolbar>
+						</KeyboardToolbar>
+					</TextField>
+					<!-- View which holds one or two view in horizontal way -->
+					<View id="v_additional_action">
+						<Label id="lbl_login_back" onClick="doClickLoginBack" />
+					</View>
+					<!-- Button which used for Register user -->
+					<Button id="btn_register" onClick="doClickRegister" />
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

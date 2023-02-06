@@ -1,0 +1,130 @@
+<Alloy>
+	<Window id="w_information" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<ScrollView id="scr_cont">
+
+				<!-- Date Start & End & Event -->
+				<View id="v_event_info">
+					<View id="v_time_holder">
+						<View id="v_time_line">
+							<View id="v_ig_round_border" />
+							<View id="v_ig_line" />
+							<View id="v_ig_round_fill" />
+						</View>
+						<View id="v_time_content">
+							<Label id="lbl_start" />
+							<Label id="lbl_end" />
+						</View>
+					</View>
+					<View id="item_holder">
+						<Label id="item_title" />
+						<Label id="item_date" />
+					</View>
+				</View>
+				<Label class="title" id="lbl_title" />
+				<View class="v_seperator" />
+				<View class="v_title_cont" id="v_client">
+					<Label class="key" id="lbl_cname_key" />
+					<Label class="subtitle" id="lbl_cname" />
+				</View>
+				<View class="v_title_cont" id="v_contact">
+					<Label class="key" id="lbl_contact_key" />
+					<View class="v_subtitle_grp">
+						<Label class="subtitle1" id="lbl_contact" />
+						<Label class="subtitle1 fontsmall" id="lbl_location_info" />
+					</View>
+				</View>
+				<View class="v_title_cont" id="v_email" onClick="doOpenEmailDialog">
+					<Label class="key" id="lbl_email_key" />
+					<Label class="subtitle" id="lbl_email" />
+				</View>
+				<View class="v_title_cont" id="v_phone_1" onClick="doOpenPhoneDialog">
+					<Label class="key" id="lbl_phone_1_key" />
+					<Label class="subtitle" id="lbl_phone_1" />
+				</View>
+				<View class="v_title_cont" id="v_phone_2" onClick="doOpenPhoneDialog">
+					<Label class="key" id="lbl_phone_2_key" />
+					<Label class="subtitle" id="lbl_phone_2" />
+				</View>
+				<View class="v_seperator" />
+				<View class="v_title_cont" id="v_loca">
+					<Label class="key" id="lbl_loca_key" />
+					<Label class="subtitle" id="lbl_loca" />
+				</View>
+				<View class="v_title_cont" id="v_loca_add">
+					<Label class="key" id="lbl_loca_add_key" />
+					<Label class="subtitle" id="lbl_loca_add" />
+				</View>
+				<View class="v_title_cont" id="v_loca_btn">
+					<Button class="btnaction" id="btn_route_map" onClick="doOpenRouteMap" />
+				</View>
+				<View class="v_seperator" top="Alloy.CFG.Space.Normal" />
+				<View class="v_title_cont" id="v_store">
+					<Label class="key" id="lbl_name_key" />
+					<Label class="subtitle" id="lbl_name" />
+				</View>
+				<View class="v_title_cont" id="v_desc">
+					<Label class="key" id="lbl_desc_key" />
+					<Label class="subtitle" id="lbl_desc" />
+				</View>
+				
+				<View class="v_seperator" top="Alloy.CFG.Space.Normal" />
+				
+				<!-- Failure -->
+				<View class="v_title_cont" id="v_failure">
+					<Label class="key" id="lbl_failure_key" />
+				</View>
+				<!-- History items listview -->
+				<ListView id="list_failure" defaultItemTemplate="template_content_failure">
+					<Templates>
+						<ItemTemplate id="item_template_content_failure" name="template_content_failure">
+							<View id="item_container_failure" bindId="mainHolder">
+								<View id="item_holder_failure">
+									<Label id="item_name" bindId="itemName" />
+									<Label id="item_desc" bindId="itemDesc" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="listsec_failure" />
+				</ListView>
+				
+				<View class="v_seperator" top="Alloy.CFG.Space.Normal" />
+				
+				<!-- History -->
+				<View class="v_title_cont" id="v_history">
+					<Label class="key" id="lbl_history_key" />
+				</View>
+				<!-- History items listview -->
+				<ListView id="list_planner" defaultItemTemplate="template_content" onItemclick="doClickTemplateItem">
+					<Templates>
+						<ItemTemplate id="item_template_content" name="template_content">
+							<View id="item_container" bindId="mainHolder">
+								<View id="v_time_holder">
+									<View id="v_time_line">
+										<View id="v_ig_round_border" />
+										<View id="v_ig_line" />
+										<View id="v_ig_round_fill" />
+									</View>
+									<View id="v_time_content">
+										<Label id="lbl_start" bindId="timeStart" />
+										<Label id="lbl_end" bindId="timeEnd" />
+									</View>
+								</View>
+								<!-- Holder which holds Activity and Location -->
+								<View id="item_holder">
+									<Label id="item_type" bindId="itemType" />
+									<Label id="item_title" bindId="itemTitle" />
+									<Label id="item_date" bindId="itemDate" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="listsec_events" />
+				</ListView>
+				
+			</ScrollView>
+			<Button id="btn_add_work" onClick="doAddNewWork" />
+		</View>
+	</Window>
+</Alloy>

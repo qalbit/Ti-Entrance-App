@@ -1,0 +1,109 @@
+"#w_activity": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+
+"#list_activities_scb": {
+	top: 48,
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+}
+
+//==== LIST VIEW ====//
+"#list_activities": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#template_item": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	left: Alloy.CFG.Space.Normal,
+	right: 146,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#v_action_cont": {
+	right: 8,
+	width: 138,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+".lbl_action_title": {
+	width: 110,
+	height: 30,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorAccent,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	color: Alloy.CFG.Colors.lblDarkColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text: "Bewerken"
+},
+"#lbl_edit": {
+	text: "Bewerken"
+},
+"#lbl_delete": {
+	top: Alloy.CFG.Space.Tiny,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	text: "Verwijderen"
+},
+"#lbl_history": {
+	top: Alloy.CFG.Space.Normal,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	backgroundColor: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Historie"
+},
+
+".lbl_item_title": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "Header"
+},
+".lbl_item_desc": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Description"
+},
+"#item_id": {
+	top: Alloy.CFG.Space.Small
+},
+"#item_status": {
+	color: Alloy.CFG.Colors.colorPrimaryDark
+},

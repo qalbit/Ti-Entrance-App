@@ -1,0 +1,68 @@
+"#w_add_signature":{
+	title: L( "txt_add_signature" , "Add Signature"),
+	navBarHidden: false,
+	backButtonTitle: "",
+},
+"#w_add_signature[platform=ios]": {
+	orientationModes: [Titanium.UI.PORTRAIT]
+},
+"#v_cont":{
+	top: 0,
+	bottom: 48,
+	backgroundColor: Alloy.CFG.Colors.tfLightColor
+},
+"#ig_sign_here":{
+	left: 18,
+	width: 10,
+	height: Ti.UI.SIZE,
+	image: "/images/ic_sign_here_msg.png"
+}
+"#v_signature_area":{
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Normal,
+	borderRadius: Alloy.CFG.Space.Small,
+	borderColor: Alloy.CFG.Colors.bgDarkGray,
+	borderWidth: 1,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.bgLightGray
+}
+"#paint":{
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor,
+	strokeColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+"#v_action":{
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 48
+},
+"#btn_clear":{
+	backgroundColor: "transparent",
+	left: 0,
+	width: "50%",
+	height: Ti.UI.FILL,
+	color: Alloy.CFG.Colors.lblLightColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: "bold"
+	},
+	title: L("txt_clear", "Wissen"),
+	borderRadius: 0,
+	borderWidth: 0
+},
+"#btn_save":{
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	color: Alloy.CFG.Colors.lblLightColor,
+	right: 0,
+	width: "50%",
+	height: Ti.UI.FILL,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: "bold"
+	},
+	title: L("txt_save", "Bevestigen"),
+	borderRadius: 0,
+	borderWidth: 0
+}

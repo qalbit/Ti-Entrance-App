@@ -1,0 +1,43 @@
+<Alloy>
+	<NavigationWindow role="centerWindow" module="xp.ui" platform="ios">
+		<Window id="w_overviewer">
+			<LeftNavButton>
+				<Button id="btn_left_toggle" onClick="doClickToggle" />
+			</LeftNavButton>
+			<View id="v_cont">
+				<ListView id="list_item" defaultItemTemplate="template_item" onItemclick="doItemClickDeliveryItem">
+					<Templates>
+						<ItemTemplate name="template_item" id="template_item">
+							<View id="v_item_container">
+								<View id="v_item_content">
+									<Label id="lbl_name" bindId="name" />
+									<Label id="lbl_model" bindId="model" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="list_section_items" />
+				</ListView>
+			</View>
+			<Button id="btn_send_failure" onClick="doSendFailure" />
+		</Window>
+	</NavigationWindow>
+	<Window id="w_overviewer" module="xp.ui" platform="android">
+		<View id="v_cont">
+				<ListView id="list_item" defaultItemTemplate="template_item" onItemclick="doItemClickDeliveryItem">
+					<Templates>
+						<ItemTemplate name="template_item" id="template_item">
+							<View id="v_item_container">
+								<View id="v_item_content">
+									<Label id="lbl_name" bindId="name" />
+									<Label id="lbl_model" bindId="model" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="list_section_items" />
+				</ListView>
+			</View>
+			<Button id="btn_send_failure" onClick="doSendFailure" />
+	</Window>
+</Alloy>

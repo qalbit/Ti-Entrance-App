@@ -1,0 +1,270 @@
+"#w_add_device": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	navBarHidden: false,
+	title: "Apparaat toevoegen"
+},
+
+"#btn_checked": {
+	width: 24,
+	height: 24,
+	image: "/images/ic_checkmark.png"
+},
+
+"#v_activity_container": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+},
+
+"#lbl_header_device": {
+	text: "Apparaat"
+},
+
+".v_cont_spe_device": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	borderColor: Alloy.CFG.Colors.lblDarkColor,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor
+},
+".lbl_cust_item": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#txf_cust_spe_device": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+
+"#v_activity_list": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	layout: 'horizontal',
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false
+},
+
+"#txf_item_id": {
+	hintText: "ID"
+},
+"#lbl_item_id": {
+	text: "ID"
+},
+"#txf_item_serial": {
+	hintText: "Serienummer"
+},
+"#lbl_item_serial": {
+	text: "Serienummer"
+},
+"#lbl_item_tellerstand": {
+	text: "Locatie"
+},
+"#txf_item_tellerstand": {
+	hintText: "Locatie"
+},
+
+"#lbl_item_name": {
+	text: "Naam"
+},
+"#txf_item_name": {
+	hintText: "Naam"
+},
+"#lbl_item_model": {
+	text: "Model"
+},
+"#txf_item_model": {
+	hintText: "Model"
+},
+
+"#lbl_cust_spe_device": {
+	text: "Klant specifiek apparaat"
+},
+"#lbl_cust_pro_db": {
+	text: "Klant producten database"
+},
+"#txf_cust_pro_db": {
+	hintText: "---GEEN---" 
+},
+"#lbl_header_performance": {
+	text: "Uitvoering"
+},
+"#lbl_activity": {
+	text: "Werkzaamheden"
+},
+"#txf_activity": {
+	hintText: "Maak een keuze",
+	focusable: false,
+	editable: false,
+	enabled: false
+},
+"#lbl_descr_malfunc": {
+	text: "Omschrijving"
+},
+"#txf_descr_malfunc": {
+	hintText: "Omschrijving"
+},
+"#lbl_work_performed": {
+	text: "Uitgevoerde werkzaamheden"
+},
+"#txa_work_performed": {
+	hintText: "Uitgevoerde werkzaamheden"
+},
+"#lbl_remark": {
+	text: "Opmerking (extern)"
+},
+"#txa_remark": {
+	hintText: "Opmerking (extern)"
+},
+"#lbl_remark_int": {
+	text: "Opmerking (intern)"
+},
+"#txa_remark_int": {
+	hintText: "Opmerking (intern)"
+},
+"#lbl_clining_agent": {
+	text: "Reinigingsmiddelen/Ontharding nodig"
+},
+"#lbl_clining_agent_val": {
+	text: "---GEEN---"
+},
+"#lbl_type_agent": {
+	text: "Soort/type reinigingsmiddelen/Ontharding"
+},
+"#txf_type_agent": {
+	hintText: ""
+},
+"#lbl_device_contaminated": {
+	text: "Apparaat vervuild"
+},
+"#lbl_device_contaminated_val": {
+	text: "---GEEN---"
+},
+"#lbl_device_molest": {
+	text: "Conditie"
+},
+"#lbl_device_molest_val": {
+	text: "---GEEN---"
+},
+"#lbl_agreement": {
+	text: "Akkoord"
+},
+"#lbl_agreement_val": {
+	text: "---GEEN---"
+},
+"#btn_save": {
+	title: "Opslaan"
+},
+
+"#v_add_multiple": {
+	left: 0,
+	right: 0,
+},
+"#v_add_photo_cont": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal
+},
+
+".v_cont_photo_add": {
+	width: Ti.UI.FILL,
+	height: 30,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: 15
+},
+"#lbl_select_photo": {
+	text: "Foto's toevoegen",
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+"#lbl_select_photo_add": {
+	right: 4,
+	top: 4,
+	width: 22,
+	height: 22,
+	borderRadius: 11,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor, 
+	text: "+",
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+"#scr_ig_container": {
+	width: Ti.UI.FILL,
+	height: 280,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'horizontal',
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false
+},
+
+// Add Material List - Start
+".v_cont_material": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+".v_cont_mat_add": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: 30,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: 15
+},
+"#lbl_select_material": {
+	text: "Materialen toevoegen",
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+"#list_activity": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+}
+// Add Material List - End

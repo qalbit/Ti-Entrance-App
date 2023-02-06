@@ -1,0 +1,55 @@
+<Alloy>
+	<NavigationWindow role="centerWindow" module="xp.ui" platform="ios">
+		<Window id="w_delivery_list">
+			<LeftNavButton>
+				<Button id="btn_left_toggle" onClick="doClickToggle" />
+			</LeftNavButton>
+			<View id="v_cont">
+				<ListView id="list_item" defaultItemTemplate="template_item" onItemclick="doItemClickDeliveryItem">
+					<Templates>
+						<ItemTemplate name="template_item" id="template_item">
+							<View id="v_item_container">
+								<View id="v_item_content">
+									<Label id="lbl_name" bindId="name" />
+									<Label id="lbl_model" bindId="model" />
+								</View>
+								<View id="v_item_action">
+									<Label id="lbl_action_edit" bindId="edit" />
+									<Label id="lbl_action_delete" bindId="delete" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="list_section_items" />
+				</ListView>
+			</View>
+			<View id="v_action_fab" onClick="doClickAddClient">
+				<ImageView class="fab_action" id="fab_action_add" />
+			</View>
+		</Window>
+	</NavigationWindow>
+	<Window id="w_delivery_list" module="xp.ui" platform="android">
+		<View id="v_cont">
+				<ListView id="list_item" defaultItemTemplate="template_item" onItemclick="doItemClickDeliveryItem">
+					<Templates>
+						<ItemTemplate name="template_item" id="template_item">
+							<View id="v_item_container">
+								<View id="v_item_content">
+									<Label id="lbl_name" bindId="name" />
+									<Label id="lbl_model" bindId="model" />
+								</View>
+								<View id="v_item_action">
+									<Label id="lbl_action_edit" bindId="edit" />
+									<Label id="lbl_action_delete" bindId="delete" />
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="list_section_items" />
+				</ListView>
+			</View>
+			<View id="v_action_fab" onClick="doClickAddClient">
+				<ImageView class="fab_action" id="fab_action_add" />
+			</View>
+	</Window>
+</Alloy>

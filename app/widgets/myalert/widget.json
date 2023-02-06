@@ -1,0 +1,13 @@
+{
+	"id": "myalert",
+	"name": "myalert",
+	"description" : "Alert dialog box with Textfield inside",
+	"author": "QalbIT Solution (abidhusain@qalbit.com)",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2020",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"alert dialog, textfield",
+	"platforms":"android,ios"
+}

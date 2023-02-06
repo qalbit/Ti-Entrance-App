@@ -1,0 +1,31 @@
+<Alloy>
+	<Window id="w_information_products" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<!-- Products -->
+			<View class="v_title_cont" id="v_product">
+				<Label class="key" id="lbl_product_key" />
+			</View>
+			
+			<!-- Products items listview -->
+			<ListView id="list_products" defaultItemTemplate="template_content_product" onItemclick="doClickItemProduct">
+				<Templates>
+					<ItemTemplate id="item_template_content_product" name="template_content_product">
+						<View id="item_container_product" bindId="mainHolder">
+							<View id="item_holder_product">
+								<Label id="item_name" bindId="itemName" />
+								<Label id="item_serial" bindId="itemSerial" />
+								<Label id="item_location" bindId="itemLocation" />
+								<Label id="item_desc" bindId="itemDescription" />
+							</View>
+							<ImageView id="item_is_completed" bindId="itemCompleted" />
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="listsec_product" />
+			</ListView>
+			
+			<!-- Button Action -->
+			<Button id="btn_submit" onClick="doPrepareProducts"></Button>
+		</View>
+	</Window>
+</Alloy>

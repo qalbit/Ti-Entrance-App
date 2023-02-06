@@ -1,0 +1,151 @@
+"Window":{
+	top: 0,
+	backgroundColor: Alloy.CFG.Colors.WHITE
+}
+"#leftWindow": {
+	backgroundImage: "",
+	backgroundColor: Alloy.CFG.Colors.winBgDark,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL
+},
+"#v_cont[platform=ios]": {
+	left: 0,
+	right: 120,
+	top: 0,
+	bottom: 0,
+	width: '100%'
+},
+"#v_cont[platform=android]": {
+	left: 0,
+	right: 0,
+	top: 0,
+	bottom: 0
+},
+"#v_nav_drawer_header": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 250,
+	backgroundColor: Alloy.CFG.Colors.semiDarkColor,
+},
+"#v_seperator": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: "1px",
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+"#v_user_profile_cont": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#v_profile_img_holder": {
+	width: 140,
+	height: 140,
+	borderRadius: 70,
+	backgroundColor: Alloy.CFG.Colors.semiDarkShadowColor
+},
+"#v_profile_img_holder[platform=android]": {
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+"#ig_profile": {
+	width: 124,
+	height: 124,
+	borderRadius: 62,
+	// backgroundColor: Alloy.CFG.Colors.winBg,
+	image: "/images/ic_no_user.png"
+},
+"#lbl_user_name": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Large,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "Abidhusain Chidi"
+},
+
+/**
+ * 	List Menu for Left Navigation Bar
+ */
+"#list_nav_menu": {
+	top: 250,
+	bottom: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: Alloy.CFG.Colors.winBg,
+	listSeparatorInsets : {
+		left: 0,
+		right: 0
+	},
+},
+"#list_nav_menu[platform=android]": {
+	// footerView: null
+},
+"#item_template_menu": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionBackgroundColor: 'transparent',
+	selectionStyle: Titanium.UI.SELECTION_STYLE_NONE
+},
+"#v_menu_cont": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+"#ig_menu_icon": {
+	left: Alloy.CFG.Space.Normal,
+	width: 24,
+	height: 24
+},
+"#lbl_menu_title": {
+	left: 60,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "Home"
+},
+"#v_action_cont": {
+	right: Alloy.CFG.Space.Small,
+	width: 44,
+	height: Ti.UI.SIZE,
+	visible: false
+},
+"#lbl_badge": {
+	width: 40,
+	height: 20,
+	borderRadius: 10,
+	borderColor: Alloy.CFG.Colors.lblLightColor,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 10,//Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "99+"
+},
+
+/**
+ * 	Action Holder for Logout and rest action
+ */
+"#v_action_holder": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 60
+},
+"#btn_action_logout": {
+	title: "Logout"
+},

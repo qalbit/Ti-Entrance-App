@@ -1,0 +1,143 @@
+"#listview": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "transparent",
+	separatorColor: "transparent",
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+"#listheader": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+
+"#lh_cont": {
+	width: Ti.UI.FILL,
+	height: 60,
+	backgroundColor: 'white',
+	layout: 'horizontal'
+},
+
+"#template_three": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent'
+},
+
+"#it_cont": {
+	top: 1,
+	width: Ti.UI.FILL,
+	height: 60,
+	backgroundColor: 'white',
+	layout: 'horizontal'
+},
+
+"#v_cont_1": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'red'
+},
+"#lbl_item_1": {
+	left: 8,
+	right: 8,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "black",
+	text: "Item Title",
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	}
+},
+
+"#v_cont_2": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'red'
+},
+"#lbl_item_2": {
+	left: 8,
+	right: 8,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "black",
+	text: "Sub Title",
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	}
+},
+
+"#v_cont_3": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'red'
+},
+
+"#btn_add_item": {
+	left: 8,
+	right: 8,
+	width: Ti.UI.FILL,
+	height: 36,
+	borderRadius: 18,
+	backgroundColor: "transparent"
+},
+"#lbl_add_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: "transparent",
+	text: "Toevoegen",
+	color: "white",
+	touchEnabled: false
+},
+"#v_action_qty": {
+	left: 8,
+	right: 8,
+	width: Ti.UI.FILL,
+	height: 36,
+	borderRadius: 18,
+	backgroundColor: "white"
+},
+"#txf_qty": {
+	left: 8,
+	right: 8,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: 12,
+		fontWeight: 'bold'
+	},
+	color: "black",
+	backgroundColor: "transparent",
+	value: "01",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD
+},
+
+"#btn_qty_remove": {
+	width: 36,
+	height: 36,
+	left: 0,
+	image: WPATH( "ic_qty_remove.png")
+},
+"#lbl_qty": {
+	left: 40,
+	right: 40,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	},
+	color: "black",
+	text: "01",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#btn_qty_add": {
+	width: 36,
+	height: 36,
+	borderRadius: 18,
+	right: 0,
+	image: WPATH( "ic_qty_add.png")
+},

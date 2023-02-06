@@ -1,0 +1,102 @@
+{
+    "colorPrimary": {
+        "dark": "#002B49",
+        "light": "#002B49"
+    },
+    "colorPrimaryDark": {
+        "dark": "#002B49",
+        "light": "#002B49"
+    },
+    "colorAccent": {
+        "dark": "#009640",
+        "light": "#009640"
+    },
+    "winBg": {
+        "dark": "#FDF7F7",
+        "light": "#FDF7F7"
+    },
+    "winBgDark": {
+        "dark": "#444444",
+        "light": "#444444"
+    },
+    "bgLightGray": {
+        "dark": "#EAEAEA",
+        "light": "#EAEAEA"
+    },
+    "bgDarkGray": {
+        "dark": "#CCCCCC",
+        "light": "#CCCCCC"
+    },
+    "tintColor": {
+        "dark": "#FFFFFF",
+        "light": "#FFFFFF"
+    },
+    "colorPrimaryLight": {
+        "dark": "#60003770",
+        "light": "#60003770"
+    },
+    "tfLightBgColor": {
+        "dark": "#DDFFFFFF",
+        "light": "#DDFFFFFF"
+    },
+    "tfLightBgColorPrimary": {
+        "dark": "#77FFFFFF",
+        "light": "#77FFFFFF"
+    },
+    "tfLightColor": {
+        "dark": "#FFFFFF",
+        "light": "#FFFFFF"
+    },
+    "tfDarkColor": {
+        "dark": "#000000",
+        "light": "#000000"
+    },
+    "lblDefaultColor": {
+        "dark": "#444444",
+        "light": "#444444"
+    },
+    "lblLightColor": {
+        "dark": "#DDDDDD",
+        "light": "#DDDDDD"
+    },
+    "lblSemiLightColor": {
+        "dark": "#DDDDDDDD",
+        "light": "#DDDDDDDD"
+    },
+    "lblDarkColor": {
+        "dark": "#000000",
+        "light": "#000000"
+    },
+    "lblSemiDarkColor": {
+        "dark": "#70000000",
+        "light": "#70000000"
+    },
+    "semiDarkShadowColor": {
+        "dark": "#40666666",
+        "light": "#40666666"
+    },
+    "semiDarkColor": {
+        "dark": "#60000000",
+        "light": "#60000000"
+    },
+    "lblWhiteColor": {
+        "dark": "#FFFFFF",
+        "light": "#FFFFFF"
+    },
+    "calDatePrevColor": {
+        "dark": "#19000000",
+        "light": "#19000000"
+    },
+    "calDateCurrentColor": {
+        "dark": "#002B49",
+        "light": "#002B49"
+    },
+    "priorityColor": {
+        "dark": "#BB0000",
+        "light": "#BB0000"
+    },
+    "searchBarTintColor": {
+        "dark": "#FFFFFF",
+        "light": "#FFFFF"
+    }
+}

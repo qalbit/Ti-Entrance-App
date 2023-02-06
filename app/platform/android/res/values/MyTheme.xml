@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTheme.Titanium" parent="@style/Theme.MaterialComponents.Light">
+        <!-- AppCompat Compatibility -->
+        <item name="colorPrimary">#002B49</item>
+        <item name="colorPrimaryDark">#002B49</item>
+        <item name="colorAccent">#009640</item>
+        <item name="android:textColorPrimary">#000000</item>
+		<item name="android:statusBarColor">#002B49</item>
+		<item name="android:navigationBarColor">#002B49</item>
+
+        <item name="toolbarStyle">@style/MyToolbar</item>
+
+        <!-- Add these -->
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+    </style>
+
+    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">#FFFFFF</item>
+    </style>
+    
+    <style name="MyTheme.NoTitleBar" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <!-- AppCompat Compatibility -->
+        <item name="colorPrimary">#002B49</item>
+        <item name="colorPrimaryDark">#002B49</item>
+        <item name="colorAccent">#009640</item>
+    </style>
+</resources>

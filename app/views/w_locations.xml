@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="w_locations" onClose="doCloseWindow" onOpen="doOpenWindow">
+		<View id="v_cont">
+			<View id="v_cont_list">
+				<ListView id="list_locations" defaultItemTemplate="template_name" onItemclick="doTemplateItemClick" >
+					<Templates>
+						<ItemTemplate name="template_name" id="template_name">
+							<View id="v_item_container">
+								<Label id="lbl_name" bindId="name" />
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<FooterView height="0" />
+					<ListSection id="list_section_locations" />
+				</ListView>
+			</View>
+			<Button id="btn_close" onClick="doCloseClick" />
+		</View>
+	</Window>
+</Alloy>

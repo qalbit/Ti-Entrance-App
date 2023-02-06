@@ -1,0 +1,9 @@
+<Alloy>
+	<AlertDialog id="alertdialog" onClick="doClickAlertDialog">
+		<View platform="android">
+			<View id="v_cont_txf">
+				<TextField id="txf_android" />
+			</View>
+		</View>
+	</AlertDialog>
+</Alloy>

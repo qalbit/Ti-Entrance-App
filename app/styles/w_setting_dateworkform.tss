@@ -1,0 +1,88 @@
+"#w_setting_dateworkform": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: false,
+	title: "Werkbon",
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	backgroundImage: ""
+},
+"#v_cont_overall": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: 60,
+	layout: 'vertical'
+},
+"#lbl_client_name": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+"#lbl_client_location_main": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: ""
+},
+"#lbl_date": {
+	text: "Datum"
+},
+"#txf_date_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#lbl_arrival_time": {
+	text: "Aankomst"
+},
+"#txf_arrival_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#lbl_departure_time": {
+	text: "Vertrek"
+},
+"#txf_depart_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#btn_save_setting": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 60,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	title: "Volgende",
+	borderColor: 'transparent',
+	borderWidth: 0,
+	borderRadius: 0,
+}

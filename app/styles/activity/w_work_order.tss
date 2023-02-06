@@ -1,0 +1,125 @@
+"#w_work_order": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+"#v_activity_container": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+},
+"#lbl_client_name": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+}
+
+"#lbl_client_location_main": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: ""
+}
+
+"#txf_client": {
+	enabled: false
+},
+"#pickr_2_eng": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	borderColor: Alloy.CFG.Colors.lblSemiDarkColor,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor
+},
+"#pickr_date": {
+	top: Alloy.CFG.Space.Tiny,
+	left: 0,
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	borderColor: Alloy.CFG.Colors.lblSemiDarkColor,
+	backgroundColor: Alloy.CFG.Colors.lblSemiDarkColor,
+	style: Ti.UI.PICKER_TYPE_DATE
+}
+"#lbl_2_eng_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "---GEEN---"
+},
+"#txf_date_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#txf_arrival_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+"#txf_depart_val": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor
+},
+
+"#lbl_client": {
+	text: "Klant"
+},
+"#lbl_2_eng": {
+	text: "2de monteur"
+},
+"#lbl_header_visit": {
+	text: "Bezoek"
+},
+"#lbl_date": {
+	text: "Datum"
+},
+"#lbl_arrival_time": {
+	text: "Aankomsttijd"
+},
+"#lbl_departure_time": {
+	text: "Vertrektijd"
+},
+"#lbl_parking_cost": {
+	text: "Parkeerkosten"
+},

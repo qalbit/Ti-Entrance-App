@@ -1,0 +1,25 @@
+<Alloy>
+	<Window id="w_device_list" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<RightNavButton platform="ios">
+			<ImageView class="fab_action" id="fab_action_add" onClick="doAddDevice" />
+		</RightNavButton>
+		<View id="v_cont">
+			<ListView id="list_devices" defaultItemTemplate="template_devices" onItemclick="doItemClickDevices">
+				<SearchBar id="searchBar" barColor="Alloy.CFG.Colors.bgLightGray" />
+				<!-- <SearchView id="searchBar" platform="android" /> -->
+				<Templates>
+					<ItemTemplate name="template_devices" id="template_devices">
+						<View id="v_item_container" bindId="clientContainer">
+							<Label id="lbl_name" bindId="name" />
+							<Label id="lbl_type" bindId="type" />
+							<Label id="lbl_id" bindId="id" />
+							<Label id="lbl_serial" bindId="serial" />
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<FooterView height="0" />
+				<ListSection id="list_section_devices" />
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

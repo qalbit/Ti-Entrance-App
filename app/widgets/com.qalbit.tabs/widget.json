@@ -1,0 +1,13 @@
+{
+	"id": "com.qalbit.tabs",
+	"name": "Qalbit Tabs",
+	"description" : "A custom tabs UI design which helps for every application of Titanium for Use of Custom Tabs",
+	"author": "Abidhusain",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2018",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"custom tabs, tab group, group, titanium",
+	"platforms":"android,ios"
+}

@@ -1,0 +1,37 @@
+<Alloy>
+	<Window id="w_setting_date" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<View id="v_cont_overall">
+				<View class="v_field_item">
+					<Label id="lbl_client_name" />
+					<Label id="lbl_client_location_main" />
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_date" />
+					<!-- iOS Picker -->
+					<View class="lbl_txf_item" id="txf_date" onClick="doSetDate">
+						<Label id="txf_date_val" />
+					</View>
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_arrival_time" />
+					<!-- iOS Picker -->
+					<View class="lbl_txf_item" id="txf_arrival_time" onClick="doArrivalTimeOpen">
+						<Label id="txf_arrival_val" />
+					</View>
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_departure_time" />
+					<!-- iOS Picker -->
+					<View class="lbl_txf_item" id="txf_depart_time" onClick="doDepTimeOpen">
+						<Label id="txf_depart_val" />
+					</View>
+				</View>
+			</View>
+			<Button id="btn_save_setting" onClick="doSaveSettings" />
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="_container">
+		<View id="_overlay" onClick="doClickSelectImage">
+			<Label id="_title" />
+			<Button id="_action" />
+		</View>
+		<ScrollView id="_scr" />
+	</View>
+</Alloy>

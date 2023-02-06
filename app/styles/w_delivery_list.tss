@@ -1,0 +1,108 @@
+"#w_delivery_list": {
+	//backgroundImage: "",
+	navBarHidden: false,
+	title: "Werkbon",
+},
+/**
+* 	Left Navigation button
+*/
+"#btn_left_toggle": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_menu.png"
+},
+
+/**
+ * 	ListView Design Start
+ */
+"#list_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+"#template_item": {
+	bottom: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+
+"#v_item_container": {
+	top: Alloy.CFG.Space.Tiny,
+	bottom: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: Alloy.CFG.Colors.lblSemiDarkColor
+},
+"#v_item_content": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	left: 16,
+	right: 156,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#v_item_action": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	right: 16,
+	width: 140,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#lbl_name": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+"#lbl_model": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+
+"#lbl_action_edit": {
+	width: 120,
+	height: 30,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorAccent,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	color: Alloy.CFG.Colors.lblDarkColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text: "Bewerken"
+},
+"#lbl_action_delete": {
+	top: Alloy.CFG.Space.Tiny,
+	width: 120,
+	height: 30,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text: "Verwijderen",
+	
+}

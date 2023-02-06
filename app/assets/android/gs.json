@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1078710957835",
+    "project_id": "entrance-5ae81",
+    "storage_bucket": "entrance-5ae81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078710957835:android:53145dbc4c531439b3940e",
+        "android_client_info": {
+          "package_name": "com.conceptos.entrance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078710957835-ovcu02127n4jdmjedl29kj3chm3dk2so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE0VCPs2M-fncMk0jzhrSz_BSmT8Sqe3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078710957835-ovcu02127n4jdmjedl29kj3chm3dk2so.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1078710957835-qs553f3jq3bronv7k453cjkc1gapab88.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.conceptos.entrance"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

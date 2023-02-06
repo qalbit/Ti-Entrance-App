@@ -1,0 +1,78 @@
+"#w_solution": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	navBarHidden: false,
+	title: "Storing"
+},
+
+"#v_cont": {
+	layout: 'vertical'
+},
+
+".v_item_holder": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+".lbl_header": {
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color : Alloy.CFG.Colors.colorPrimaryDark,
+	font : {
+		fontSize : Alloy.CFG.FontSize.Small,
+		fontWeight : 'bold'
+	},
+},
+".lbl_description": {
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE,
+	color: Alloy.CFG.Colors.lblDarkColor,
+	font: {
+		fontSize : Alloy.CFG.FontSize.Normal,
+		fontWeight : 'normal'
+	},
+},
+"#lbl_name": {
+	text : "Name"
+},
+"#name_val": {
+	text: "Stortbak vol"
+},
+"#lbl_desc": {
+	text : "Description"
+},
+"#desc_val": {
+	text: "Deze storing ontstaat wanneer de afval teveel afval bevat."
+},
+"#lbl_sol": {
+	text : "Solution"
+},
+"#sol_val": {
+	text: "Deze storing ontstaat wanneer de afval teveel afval bevat."
+},
+
+"#fault_resolved_val": {
+	text: "Is de storing nog niet verholpen?"
+},
+
+"#btn_action": {
+	top: Alloy.CFG.Space.Normal,
+	width: 180,
+	height: 50,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	title: "Storing melden"
+}

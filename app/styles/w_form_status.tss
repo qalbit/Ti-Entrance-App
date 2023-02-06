@@ -1,0 +1,133 @@
+"#w_form_status": {
+	modal: true
+},
+
+"#blur_main_view": {
+	width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    effect: Titanium.UI.iOS.BLUR_EFFECT_STYLE_LIGHT
+},
+
+"#v_content_holder": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+"#lbl_swipe_down_msg": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.winBg,
+	text: "SWIPE DOWN TO CLOSE"
+}
+
+"#v_content_main_holder": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	borderRadius: Alloy.CFG.Space.Normal,
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	layout: 'vertical'
+},
+
+"#lbl_form_title": {
+	top: Alloy.CFG.Space.Huge,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.XXLarge,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "Fresh Sushi"
+},
+"#lbl_form_subtitle": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	text: "Pending"
+},
+
+"#v_date_time_holder": {
+	top: Alloy.CFG.Space.Huge,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+"#v_date_holder": {
+	left: 0,
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+},
+"#lbl_date_header": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "DATE"
+},
+"#lbl_date_value": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Large,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "11-12-2018"
+},
+
+"#v_time_holder": {
+	right: 0,
+	width: Alloy.CFG.UI.Grid.two,
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+},
+"#lbl_time_header": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "TIME"
+},
+"#lbl_time_value": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Large,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "04:40 PM"
+},

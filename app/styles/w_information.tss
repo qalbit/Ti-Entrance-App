@@ -1,0 +1,467 @@
+"#w_information": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: false,
+	title: "Informatie"
+},
+
+
+"#scr_cont": {
+	top: 0,
+	bottom: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+},
+
+// Event Information START
+"#v_event_info": {
+	top: 0,
+	bottom: 0,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: 0,
+	height: 0
+},
+"#v_time_holder": {
+	left: 0,
+	top: 0,
+	width: 60,
+	height: 60,
+},
+"#v_time_line": {
+	left: 0,
+	width: 10,
+	height: Ti.UI.FILL,
+},
+"#v_ig_round_border": {
+	top: 0,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	borderWidth: 1,
+	backgroundColor: 'transparent',
+	borderColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_ig_line": {
+	top: 12,
+	width: 2,
+	height: 36,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_ig_round_fill": {
+	bottom: 0,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	borderWidth: 0,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_time_content": {
+	left: 10,
+	width: 90,
+	height: Ti.UI.FILL,
+},
+"#lbl_start": {
+	top: '-3',
+	left: 3,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "09:00",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+"#lbl_end": {
+	bottom: '-3',
+	left: 3,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "15:00",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+"#item_holder": {
+	left: 0, //70,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#item_title": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.XLarge,
+		fontWeight: 'bold'
+	},
+	text: "PD Team Daily Sync Up",
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+"#item_date": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'normal'
+	},
+	text: "22-11-1991",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+// Event Information END
+
+".title": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.XXLarge,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.colorPrimary
+},
+".v_seperator": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Tiny,
+	bottom: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: 1,
+	backgroundColor: Alloy.CFG.Colors.lblSemiLightColor
+},
+".v_title_cont": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: 0,
+	height: 0
+}
+".key": {
+	left: 0,
+	top: 0,
+	width: 120,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+}
+".v_subtitle_grp": {
+	left: 128,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+}
+".subtitle": {
+	left: 128,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+".subtitle1": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+".fontsmall": {
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+}
+".btnaction": {
+	left: 128,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 42,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	backgroundColor: Alloy.CFG.Colors.colorAccent
+},
+"#lbl_cname_key": {
+	text: "Klant"
+},
+"#lbl_contact_key": {
+	text: "Contactpersoon"
+},
+"#lbl_email_key": {
+	text: "E-mail"
+},
+"#lbl_phone_1_key": {
+	text: "Telefoonnummer"
+},
+"#lbl_phone_2_key": {
+	text: "Alternatief"
+},
+"#lbl_name_key": {
+	text: "Storing"
+},
+"#lbl_desc_key": {
+	text: "Omschrijving"
+},
+"#lbl_loca_key": {
+	text: "Locatie"
+},
+"#lbl_loca_add_key": {
+	text: "Adres"
+},
+"#lbl_title": {
+	text: "Werk order"
+},
+"#lbl_failure_key": {
+	text: "Apparaten"	
+},
+"#lbl_history_key": {
+	text: "Geschiedenis"
+},
+"#lbl_cname": {
+},
+"#lbl_name": {
+},
+"#lbl_desc": {
+},
+"#lbl_loca": {
+	color: Alloy.CFG.Colors.lblLightColor
+},
+"#btn_route_map": {
+	top: Alloy.CFG.Space.Normal,
+	title: "Route in Google Maps"	
+},
+
+"#v_client": {
+	width: 0,
+	height: 0
+}
+
+"#btn_add_work": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 60,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	title: "Werkbon toevoegen",
+	borderColor: 'transparent',
+	borderWidth: 0,
+	borderRadius: 0,
+	visible: false
+},
+
+/** ListView Failure Design */
+"#list_failure": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+/**	ListItem Content Template Design */
+"#item_template_content_failure": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: 'none'
+},
+/**
+ * 	Comment ListItem Container design
+ */
+"#item_container_failure": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+"#item_holder_failure": {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#item_name": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	text: "PD Team Daily Sync Up",
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+"#item_desc": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "DD-MM-YYYY",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+/** Listview failure design complete here */
+
+
+/**
+ * 	ListView Planner Design
+ */
+"#list_planner": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+/**
+ * 	ListItem Content Template Design
+ */
+"#item_template_content": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: 'none'
+},
+/**
+ * 	Comment ListItem Container design
+ */
+"#item_container": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+
+"#v_time_holder": {
+	left: 0,
+	top: 0,
+	width: 0,
+	height: 0,
+},
+"#v_time_line": {
+	left: 0,
+	width: 10,
+	height: Ti.UI.FILL,
+},
+"#v_ig_round_border": {
+	top: 0,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	borderWidth: 1,
+	backgroundColor: 'transparent',
+	borderColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_ig_line": {
+	top: 12,
+	width: 2,
+	height: 36,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_ig_round_fill": {
+	bottom: 0,
+	width: 8,
+	height: 8,
+	borderRadius: 4,
+	borderWidth: 0,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary
+},
+"#v_time_content": {
+	left: 10,
+	width: 90,
+	height: Ti.UI.FILL,
+},
+"#lbl_start": {
+	top: '-3',
+	left: 3,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "09:00",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+"#lbl_end": {
+	bottom: '-3',
+	left: 3,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "15:00",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+
+"#item_holder": {
+	top: 0,
+	left: 0, //70,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#item_type": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "Green Room",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+"#item_title": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	text: "PD Team Daily Sync Up",
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+"#item_date": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "DD-MM-YYYY",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+
+/** Listview design complete here */

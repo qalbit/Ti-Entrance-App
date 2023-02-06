@@ -1,0 +1,140 @@
+{
+    "global": {
+        "Default": {
+            "logo": "/images/ic_logo.png"
+        },
+        "Debug": "",
+        "Url": {
+            "BaseDev": "https://entrance.test.contos.nl/webservices/app/",
+            "Base": "https://entrance.contos.nl/webservices/app/",
+            "BaseLive": "https://entrance.contos.nl/webservices/app/",
+            "EndPoint": {
+                "Login": "login/",
+                "Data": "data/",
+                "DeliveryProducts": "data/delivery/view/",
+                "Artical": "data/clients/articles/",
+                "Inform": "data/work_orders/view/",
+                "Location": "data/clients_locations/view/LOC_ID/",
+                "ErrorCode": "data/faq/failures/DEVICE_ID;ERROR_CODE/",
+                "Search": {
+                    "Client": "data/clients/external/?clients[name]=SEARCH_FILTER",
+                    "Material": "data/products/external/?products[filter]=service&products[name]=SEARCH_FILTER"
+                },
+                "Delivery": "delivery/",
+                "FailureHistory": "data/work_forms/history/"
+            }
+        },
+        "Colors": {
+            "colorPrimary": "#002B49",
+            "colorPrimaryDark": "#002B49",
+            "colorAccent": "#009640",
+            "winBg": "#FDF7F7",
+            "winBgDark": "#444444",
+            "bgLightGray": "#EAEAEA",
+            "bgDarkGray": "#CCCCCC",
+            "tintColor": "#FFFFFF",
+            "colorPrimaryLight": "#60003770",
+            "tfLightBgColor": "#DDFFFFFF",
+            "tfLightBgColorPrimary": "#77FFFFFF",
+            "tfLightColor": "#FFFFFF",
+            "tfDarkColor": "#000000",
+            "lblDefaultColor": "#444444",
+            "lblLightColor": "#DDDDDD",
+            "lblSemiLightColor": "#DDDDDDDD",
+            "lblDarkColor": "#000000",
+            "lblSemiDarkColor": "#70000000",
+            "semiDarkShadowColor": "#40666666",
+            "semiDarkColor": "#60000000",
+            "lblWhiteColor": "#FFFFFF",
+            "calDatePrevColor": "#19000000",
+            "calDateCurrentColor": "#002B49",
+            "priorityColor": "#BB0000",
+            "searchBarTintColor": "#FFFFFF"
+        },
+        "Space": {
+            "TwoDot": 2,
+            "Tiny": 4,
+            "Small": 8,
+            "Normal": 16,
+            "Huge": 32,
+            "Xhuge": 64,
+            "XXhuge": 96,
+            "AgendaBottom": 20
+        }
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {
+        "FontSize": {
+            "ExtTny": "8sp",
+            "Tiny": "10sp",
+            "Small": "12sp",
+            "Normal": "16sp",
+            "Large": "18sp",
+            "XLarge": "22sp",
+            "X2Large": "30sp",
+            "XXLarge": "40sp"
+        },
+        "FontSize_T": {
+            "ExtTny": "14sp",
+            "Tiny": "16sp",
+            "Small": "18sp",
+            "Normal": "22sp",
+            "Large": "24sp",
+            "XLarge": "28sp",
+            "X2Large": "36sp",
+            "XXLarge": "46sp"
+        }
+    },
+    "os:ios": {
+        "FontSize": {
+            "ExtTny": 8,
+            "Tiny": 10,
+            "Small": 12,
+            "Normal": 16,
+            "Large": 18,
+            "XLarge": 22,
+            "X2Large": 30,
+            "XXLarge": 40
+        },
+        "FontSize_6": {
+            "ExtTny": 10,
+            "Tiny": 12,
+            "Small": 14,
+            "Normal": 18,
+            "Large": 20,
+            "XLarge": 24,
+            "X2Large": 32,
+            "XXLarge": 42
+        },
+        "FontSize_6p": {
+            "ExtTny": 12,
+            "Tiny": 14,
+            "Small": 16,
+            "Normal": 20,
+            "Large": 22,
+            "XLarge": 26,
+            "X2Large": 34,
+            "XXLarge": 44
+        },
+        "FontSize_T": {
+            "ExtTny": 14,
+            "Tiny": 16,
+            "Small": 18,
+            "Normal": 22,
+            "Large": 24,
+            "XLarge": 28,
+            "X2Large": 36,
+            "XXLarge": 46
+        }
+    },
+    "os:windows": {},
+    "dependencies": {
+        "nl.fokkezb.drawer": "*",
+        "com.qalbit.tabs": "1.0",
+        "qalbit.photoselection": "*",
+        "mylistview": "1.0",
+        "myalert": "1.0"
+    }
+}

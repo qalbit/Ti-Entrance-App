@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="w_login" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<ScrollView id="scr_cont">
+				<View id="v_elem_holder">
+					<!-- Dynamic logo Comes here -->
+					<ImageView id="ig_logo" />
+					<!-- TextField that holds Username -->
+					<TextField id="txf_username" onReturn="doFocusPassField" /> <!--  value="ivo"  -->
+					<!-- TextField that holds Password -->
+					<TextField id="txf_password" onReturn="doClickLogin" /> <!--  value="Welkom@01" -->
+					<!-- View which holds two view in horizontal way -->
+					<!-- <View id="v_additional_action">
+						<Label id="lbl_forgot" onClick="doClickForgotPass" />
+						<Label id="lbl_register" onClick="doClickRegister" />
+					</View> -->
+					<!-- Button which used for Logged-in user -->
+					<Button id="btn_login" onClick="doClickLogin" />
+				</View>
+				<View id="v_loader">
+					<ActivityIndicator id="act_loader" />
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

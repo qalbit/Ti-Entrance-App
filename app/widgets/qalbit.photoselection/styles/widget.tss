@@ -1,0 +1,61 @@
+"#_container": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	layout: 'vertical'
+},
+
+"#_overlay": {
+	left: 16,
+	right: 16,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	borderRadius: 8,
+	backgroundColor: "#990000",
+	opacity: 0.8
+},
+
+"#_title": {
+	left: 16,
+	right: 116,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	},
+	color: "#fff",
+	text: "Foto toevoegen"
+},
+
+"#_action": {
+	top: 8,
+	bottom: 8,
+	right: 8,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	image: WPATH("_ic_add.png"),
+	borderColor: 'transparent',
+	borderRadius: 0,
+	borderWidth: 0
+},
+"#_action[platform=ios]": {
+	tintColor: "#fff"
+},
+
+"#_scr": {
+	top: 8,
+	left: 16,
+	right: 16,
+	borderRadius: 8,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: "#EFEFEF",
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'horizontal',
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false,
+}

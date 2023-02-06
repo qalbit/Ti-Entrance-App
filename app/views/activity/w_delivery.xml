@@ -1,0 +1,111 @@
+<Alloy>
+	<View id="w_delivery">
+		<ScrollView id="scr_overview">
+			<!-- Work Order -->
+			<View class="v_block_container">
+				<View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_client" />
+				</View>
+				<View class="v_field_item">
+					<Label id="lbl_client_name" />
+					<Label id="lbl_client_location" />
+				</View>
+				<!-- <View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_2_eng" />
+				</View>
+				<View class="v_field_item">
+					<Label id="lbl_2_eng_val" />
+				</View> -->
+				<View class="v_act_header">
+					<Label class="lbl_act_header" id="lbl_header_visit" />
+					<View class="v_header_seperator" />
+				</View>
+				<View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_date" />
+				</View>
+				<View class="v_field_item">
+					<Label id="txf_date_val" />
+				</View>
+				<View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_arrival_time" />
+				</View>
+				<View class="v_field_item">
+					<Label id="txf_arrival_val" />
+				</View>
+				<View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_departure_time" />
+				</View>
+				<View class="v_field_item">
+					<Label id="txf_depart_val" />
+				</View>
+				
+				<!-- <View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_parking_cost" />
+				</View>
+				<View class="v_field_item">
+					<Label id="txf_parking_cost" />
+				</View> -->
+				
+				<View class="v_act_header">
+					<Label class="lbl_act_header" id="lbl_header_activities" />
+					<View class="v_header_seperator" />
+				</View>
+				<ScrollView id="list_activities_data" />
+				<ListView id="list_activities" defaultItemTemplate="template_item">
+					<Templates>
+						<ItemTemplate name="template_item" id="template_item_act">
+							<View id="v_item_container_act">
+								<Label class="lbl_item_title" id="item_act_product" bindId="product" />
+								<Label class="lbl_item_desc" id="item_act_id" bindId="id" />
+								<Label class="lbl_item_desc" id="item_act_serial" bindId="serial" />
+								<Label class="lbl_item_desc" id="item_act_store" bindId="store" />
+								<Label class="lbl_item_desc" id="item_act_status" bindId="status" />
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<FooterView height="0" />
+					<ListSection id="list_section_activities" />
+				</ListView>
+				<View class="v_act_header" id="v_material_header">
+					<Label class="lbl_act_header" id="lbl_header_materials" />
+					<View class="v_header_seperator" />
+				</View>
+				<ListView id="list_materials" defaultItemTemplate="template_item_material">
+					<Templates>
+						<ItemTemplate name="template_item_material" id="template_item_material">
+							<View id="v_item_container">
+								<Label class="item_lbl" id="item_qty" text="1" bindId="qty" />
+								<Label class="item_lbl" id="item_product_material" text="Product" bindId="name" />
+								<Label class="item_lbl" id="item_number_material" text="Artikelnummer" bindId="number" />
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<FooterView height="0" />
+					<ListSection id="list_section_materials" />
+				</ListView>
+				<View class="v_act_header">
+					<View class="v_header_seperator" />
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_name" />
+					<TextField class="txf_item" id="txf_name_del" />
+				</View>
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_email" />
+					<TextField class="txf_item" id="txf_email_del" />
+				</View>
+				<View class="v_field_item">
+					<View class="v_item_signature">
+						<Label class="lbl_item" id="lbl_signature" />
+					</View>
+					<ImageView id="ig_signature" onClick="doOpenPaintWin" />
+				</View>
+				<View class="v_field_item" id="v_btn_action">
+					<Button class="btn_save_common" id="btn_save" onClick="doSaveDeliveryData"></Button>
+					<Button class="btn_save_common" id="btn_send" onClick="doSubmitDeliveryData"></Button>
+				</View>
+			</View>
+		</ScrollView>
+	</View>
+</Alloy>

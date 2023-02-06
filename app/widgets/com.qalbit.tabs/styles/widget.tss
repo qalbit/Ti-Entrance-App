@@ -1,0 +1,56 @@
+"#tabs_group": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 50,
+	backgroundColor: Alloy.CFG.Colors.colorPrimary,
+	layout: 'horizontal'
+},
+
+".tab": {
+	width: 100,
+	height: Ti.UI.FILL	
+},
+
+".title": {
+	left: 4,
+	right: 4,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblLightColor,
+	text: "Test",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	touchEnabled: false
+},
+
+".seperator": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 4,
+	backgroundColor: 'transparent',
+	touchEnabled: false
+},
+
+".v_badge_cont": {
+	right: 4,
+	width: 26,
+	height: 26,
+	borderRadius: 13,
+	borderColor: Alloy.CFG.Colors.lblLightColor,
+	borderWidth: 2,
+	backgroundColor: 'red'
+},
+
+".lbl_badge": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: '00'
+}

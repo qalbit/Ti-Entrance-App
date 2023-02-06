@@ -1,0 +1,427 @@
+<Alloy>
+	<NavigationWindow role="centerWindow" module="xp.ui" platform="ios">
+		<Window id="w_form">
+			<LeftNavButton>
+				<Button id="btn_left_toggle" onClick="doClickToggle" />
+			</LeftNavButton>
+			<View id="v_cont">
+				<!-- Tab UI Views -->
+				<Widget id="tabs" src="com.qalbit.tabs" onClick="doClickTabs" onChange="doChangeTabs" />
+				<!-- Content Holder UI -->
+				<ScrollableView id="scrb_holder" onScrollend="doScrollEndCalled">
+					<View id="tab_content_1">
+						<!-- ListView which Holds Items as Status -->
+						<ListView id="listview_form_1" defaultItemTemplate="template_form_list" onItemclick="doListItemClick">
+							<Templates>
+								<ItemTemplate id="item_template_form_list" name="template_form_list">
+									<View id="item_container">
+										<View id="item_content_holder">
+											<!-- Main Content Holder -->
+											<View id="item_main_holder">
+												<ImageView id="ig_main" bindId="itemImage" />
+												<View id="main_title_holder">
+													<Label id="main_title" bindId="itemTitle" />
+													<View id="main_subtitle_holder">
+														<Label id="main_subtitle_key" />
+														<Label id="main_subtitle_value" bindId="itemSubtitle" />
+													</View>
+												</View>
+												<View id="main_status_holder">
+													<Label id="lbl_status" bindId="itemStatus" />
+												</View>
+												<View id="main_separator" />
+											</View>
+											<!-- Form Detail Holder -->
+											<View id="item_detail_holder">
+												<View id="detail_1">
+													<View class="detail_content_holder">
+														<Label id="detail_key_1" class="detail_key" bindId="itemDetailKey1" />
+														<Label id="detail_val_1" class="detail_val" bindId="itemDetailVal1" />
+													</View>
+												</View>
+												<View id="detail_2">
+													<View class="detail_content_holder">
+														<Label id="detail_key_2" class="detail_key" bindId="itemDetailKey2" />
+														<Label id="detail_val_2" class="detail_val" bindId="itemDetailVal2" />
+													</View>
+												</View>
+												<View id="detail_3">
+													<View class="detail_content_holder">
+														<Label id="detail_key_3" class="detail_key" bindId="itemDetailKey3" />
+														<Label id="detail_val_3" class="detail_val" bindId="itemDetailVal3" />
+													</View>
+												</View>
+												<View id="detail_4">
+													<View class="detail_content_holder">
+														<Label id="detail_key_4" class="detail_key" bindId="itemDetailKey4" />
+														<Label id="detail_val_4" class="detail_val" bindId="itemDetailVal4" />
+													</View>
+												</View>
+												<View id="detail_5">
+													<View class="detail_content_holder">
+														<Label id="detail_key_5" class="detail_key" bindId="itemDetailKey5" />
+														<Label id="detail_val_5" class="detail_val" bindId="itemDetailVal5" />
+													</View>
+												</View>
+											</View>
+										</View>
+									</View>
+								</ItemTemplate>
+							</Templates>
+							<ListSection id="listsection_form">
+								<ListItem>
+								</ListItem>
+								<ListItem>
+								</ListItem>
+							</ListSection>
+						</ListView>
+					</View>
+					<View id="tab_content_2">
+						<!-- ListView which Holds Items as Status -->
+						<ListView id="listview_form_2" defaultItemTemplate="template_form_list">
+							<Templates>
+								<ItemTemplate id="item_template_form_list" name="template_form_list">
+									<View id="item_container">
+										<View id="item_content_holder">
+											<!-- Main Content Holder -->
+											<View id="item_main_holder">
+												<ImageView id="ig_main" bindId="itemImage" />
+												<View id="main_title_holder">
+													<Label id="main_title" bindId="itemTitle" />
+													<View id="main_subtitle_holder">
+														<Label id="main_subtitle_key" />
+														<Label id="main_subtitle_value" bindId="itemSubtitle" />
+													</View>
+												</View>
+												<View id="main_status_holder">
+													<Label id="lbl_status" bindId="itemStatus" />
+												</View>
+												<View id="main_separator" />
+											</View>
+											<!-- Form Detail Holder -->
+											<View id="item_detail_holder">
+												<View id="detail_1">
+													<View class="detail_content_holder">
+														<Label id="detail_key_1" class="detail_key" bindId="itemDetailKey1" />
+														<Label id="detail_val_1" class="detail_val" bindId="itemDetailVal1" />
+													</View>
+												</View>
+												<View id="detail_2">
+													<View class="detail_content_holder">
+														<Label id="detail_key_2" class="detail_key" bindId="itemDetailKey2" />
+														<Label id="detail_val_2" class="detail_val" bindId="itemDetailVal2" />
+													</View>
+												</View>
+												<View id="detail_3">
+													<View class="detail_content_holder">
+														<Label id="detail_key_3" class="detail_key" bindId="itemDetailKey3" />
+														<Label id="detail_val_3" class="detail_val" bindId="itemDetailVal3" />
+													</View>
+												</View>
+												<View id="detail_4">
+													<View class="detail_content_holder">
+														<Label id="detail_key_4" class="detail_key" bindId="itemDetailKey4" />
+														<Label id="detail_val_4" class="detail_val" bindId="itemDetailVal4" />
+													</View>
+												</View>
+												<View id="detail_5">
+													<View class="detail_content_holder">
+														<Label id="detail_key_5" class="detail_key" bindId="itemDetailKey5" />
+														<Label id="detail_val_5" class="detail_val" bindId="itemDetailVal5" />
+													</View>
+												</View>
+											</View>
+										</View>
+									</View>
+								</ItemTemplate>
+							</Templates>
+							<ListSection id="listsection_form">
+								<ListItem>
+								</ListItem>
+								<ListItem>
+								</ListItem>
+							</ListSection>
+						</ListView>
+					</View>
+					<View id="tab_content_3">
+						<!-- ListView which Holds Items as Status -->
+						<ListView id="listview_form_3" defaultItemTemplate="template_form_list">
+							<Templates>
+								<ItemTemplate id="item_template_form_list" name="template_form_list">
+									<View id="item_container">
+										<View id="item_content_holder">
+											<!-- Main Content Holder -->
+											<View id="item_main_holder">
+												<ImageView id="ig_main" bindId="itemImage" />
+												<View id="main_title_holder">
+													<Label id="main_title" bindId="itemTitle" />
+													<View id="main_subtitle_holder">
+														<Label id="main_subtitle_key" />
+														<Label id="main_subtitle_value" bindId="itemSubtitle" />
+													</View>
+												</View>
+												<View id="main_status_holder">
+													<Label id="lbl_status" bindId="itemStatus" />
+												</View>
+												<View id="main_separator" />
+											</View>
+											<!-- Form Detail Holder -->
+											<View id="item_detail_holder">
+												<View id="detail_1">
+													<View class="detail_content_holder">
+														<Label id="detail_key_1" class="detail_key" bindId="itemDetailKey1" />
+														<Label id="detail_val_1" class="detail_val" bindId="itemDetailVal1" />
+													</View>
+												</View>
+												<View id="detail_2">
+													<View class="detail_content_holder">
+														<Label id="detail_key_2" class="detail_key" bindId="itemDetailKey2" />
+														<Label id="detail_val_2" class="detail_val" bindId="itemDetailVal2" />
+													</View>
+												</View>
+												<View id="detail_3">
+													<View class="detail_content_holder">
+														<Label id="detail_key_3" class="detail_key" bindId="itemDetailKey3" />
+														<Label id="detail_val_3" class="detail_val" bindId="itemDetailVal3" />
+													</View>
+												</View>
+												<View id="detail_4">
+													<View class="detail_content_holder">
+														<Label id="detail_key_4" class="detail_key" bindId="itemDetailKey4" />
+														<Label id="detail_val_4" class="detail_val" bindId="itemDetailVal4" />
+													</View>
+												</View>
+												<View id="detail_5">
+													<View class="detail_content_holder">
+														<Label id="detail_key_5" class="detail_key" bindId="itemDetailKey5" />
+														<Label id="detail_val_5" class="detail_val" bindId="itemDetailVal5" />
+													</View>
+												</View>
+											</View>
+										</View>
+									</View>
+								</ItemTemplate>
+							</Templates>
+							<ListSection id="listsection_form">
+								<ListItem>
+								</ListItem>
+								<ListItem>
+								</ListItem>
+							</ListSection>
+						</ListView>
+					</View>
+				</ScrollableView>
+			</View>
+		</Window>
+	</NavigationWindow>
+	<Window id="w_form" module="xp.ui" platform="android">
+		<View id="v_cont">
+			<!-- Tab UI Views -->
+			<Widget id="tabs" src="com.qalbit.tabs" onClick="doClickTabs" onChange="doChangeTabs" />
+			<!-- Content Holder UI -->
+			<ScrollableView id="scrb_holder" onScrollend="doScrollEndCalled">
+				<View id="tab_content_1">
+					<!-- ListView which Holds Items as Status -->
+					<ListView id="listview_form_1" defaultItemTemplate="template_form_list" onItemclick="doListItemClick">
+						<Templates>
+							<ItemTemplate id="item_template_form_list" name="template_form_list">
+								<View id="item_container">
+									<View id="item_content_holder">
+										<!-- Main Content Holder -->
+										<View id="item_main_holder">
+											<ImageView id="ig_main" bindId="itemImage" />
+											<View id="main_title_holder">
+												<Label id="main_title" bindId="itemTitle" />
+												<View id="main_subtitle_holder">
+													<Label id="main_subtitle_key" />
+													<Label id="main_subtitle_value" bindId="itemSubtitle" />
+												</View>
+											</View>
+											<View id="main_status_holder">
+												<Label id="lbl_status" bindId="itemStatus" />
+											</View>
+											<View id="main_separator" />
+										</View>
+										<!-- Form Detail Holder -->
+										<View id="item_detail_holder">
+											<View id="detail_1">
+												<View class="detail_content_holder">
+													<Label id="detail_key_1" class="detail_key" bindId="itemDetailKey1" />
+													<Label id="detail_val_1" class="detail_val" bindId="itemDetailVal1" />
+												</View>
+											</View>
+											<View id="detail_2">
+												<View class="detail_content_holder">
+													<Label id="detail_key_2" class="detail_key" bindId="itemDetailKey2" />
+													<Label id="detail_val_2" class="detail_val" bindId="itemDetailVal2" />
+												</View>
+											</View>
+											<View id="detail_3">
+												<View class="detail_content_holder">
+													<Label id="detail_key_3" class="detail_key" bindId="itemDetailKey3" />
+													<Label id="detail_val_3" class="detail_val" bindId="itemDetailVal3" />
+												</View>
+											</View>
+											<View id="detail_4">
+												<View class="detail_content_holder">
+													<Label id="detail_key_4" class="detail_key" bindId="itemDetailKey4" />
+													<Label id="detail_val_4" class="detail_val" bindId="itemDetailVal4" />
+												</View>
+											</View>
+											<View id="detail_5">
+												<View class="detail_content_holder">
+													<Label id="detail_key_5" class="detail_key" bindId="itemDetailKey5" />
+													<Label id="detail_val_5" class="detail_val" bindId="itemDetailVal5" />
+												</View>
+											</View>
+										</View>
+									</View>
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="listsection_form">
+							<ListItem>
+							</ListItem>
+							<ListItem>
+							</ListItem>
+						</ListSection>
+					</ListView>
+				</View>
+				<View id="tab_content_2">
+					<!-- ListView which Holds Items as Status -->
+					<ListView id="listview_form_2" defaultItemTemplate="template_form_list">
+						<Templates>
+							<ItemTemplate id="item_template_form_list" name="template_form_list">
+								<View id="item_container">
+									<View id="item_content_holder">
+										<!-- Main Content Holder -->
+										<View id="item_main_holder">
+											<ImageView id="ig_main" bindId="itemImage" />
+											<View id="main_title_holder">
+												<Label id="main_title" bindId="itemTitle" />
+												<View id="main_subtitle_holder">
+													<Label id="main_subtitle_key" />
+													<Label id="main_subtitle_value" bindId="itemSubtitle" />
+												</View>
+											</View>
+											<View id="main_status_holder">
+												<Label id="lbl_status" bindId="itemStatus" />
+											</View>
+											<View id="main_separator" />
+										</View>
+										<!-- Form Detail Holder -->
+										<View id="item_detail_holder">
+											<View id="detail_1">
+												<View class="detail_content_holder">
+													<Label id="detail_key_1" class="detail_key" bindId="itemDetailKey1" />
+													<Label id="detail_val_1" class="detail_val" bindId="itemDetailVal1" />
+												</View>
+											</View>
+											<View id="detail_2">
+												<View class="detail_content_holder">
+													<Label id="detail_key_2" class="detail_key" bindId="itemDetailKey2" />
+													<Label id="detail_val_2" class="detail_val" bindId="itemDetailVal2" />
+												</View>
+											</View>
+											<View id="detail_3">
+												<View class="detail_content_holder">
+													<Label id="detail_key_3" class="detail_key" bindId="itemDetailKey3" />
+													<Label id="detail_val_3" class="detail_val" bindId="itemDetailVal3" />
+												</View>
+											</View>
+											<View id="detail_4">
+												<View class="detail_content_holder">
+													<Label id="detail_key_4" class="detail_key" bindId="itemDetailKey4" />
+													<Label id="detail_val_4" class="detail_val" bindId="itemDetailVal4" />
+												</View>
+											</View>
+											<View id="detail_5">
+												<View class="detail_content_holder">
+													<Label id="detail_key_5" class="detail_key" bindId="itemDetailKey5" />
+													<Label id="detail_val_5" class="detail_val" bindId="itemDetailVal5" />
+												</View>
+											</View>
+										</View>
+									</View>
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="listsection_form">
+							<ListItem>
+							</ListItem>
+							<ListItem>
+							</ListItem>
+						</ListSection>
+					</ListView>
+				</View>
+				<View id="tab_content_3">
+					<!-- ListView which Holds Items as Status -->
+					<ListView id="listview_form_3" defaultItemTemplate="template_form_list">
+						<Templates>
+							<ItemTemplate id="item_template_form_list" name="template_form_list">
+								<View id="item_container">
+									<View id="item_content_holder">
+										<!-- Main Content Holder -->
+										<View id="item_main_holder">
+											<ImageView id="ig_main" bindId="itemImage" />
+											<View id="main_title_holder">
+												<Label id="main_title" bindId="itemTitle" />
+												<View id="main_subtitle_holder">
+													<Label id="main_subtitle_key" />
+													<Label id="main_subtitle_value" bindId="itemSubtitle" />
+												</View>
+											</View>
+											<View id="main_status_holder">
+												<Label id="lbl_status" bindId="itemStatus" />
+											</View>
+											<View id="main_separator" />
+										</View>
+										<!-- Form Detail Holder -->
+										<View id="item_detail_holder">
+											<View id="detail_1">
+												<View class="detail_content_holder">
+													<Label id="detail_key_1" class="detail_key" bindId="itemDetailKey1" />
+													<Label id="detail_val_1" class="detail_val" bindId="itemDetailVal1" />
+												</View>
+											</View>
+											<View id="detail_2">
+												<View class="detail_content_holder">
+													<Label id="detail_key_2" class="detail_key" bindId="itemDetailKey2" />
+													<Label id="detail_val_2" class="detail_val" bindId="itemDetailVal2" />
+												</View>
+											</View>
+											<View id="detail_3">
+												<View class="detail_content_holder">
+													<Label id="detail_key_3" class="detail_key" bindId="itemDetailKey3" />
+													<Label id="detail_val_3" class="detail_val" bindId="itemDetailVal3" />
+												</View>
+											</View>
+											<View id="detail_4">
+												<View class="detail_content_holder">
+													<Label id="detail_key_4" class="detail_key" bindId="itemDetailKey4" />
+													<Label id="detail_val_4" class="detail_val" bindId="itemDetailVal4" />
+												</View>
+											</View>
+											<View id="detail_5">
+												<View class="detail_content_holder">
+													<Label id="detail_key_5" class="detail_key" bindId="itemDetailKey5" />
+													<Label id="detail_val_5" class="detail_val" bindId="itemDetailVal5" />
+												</View>
+											</View>
+										</View>
+									</View>
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="listsection_form">
+							<ListItem>
+							</ListItem>
+							<ListItem>
+							</ListItem>
+						</ListSection>
+					</ListView>
+				</View>
+			</ScrollableView>
+		</View>
+	</Window>
+</Alloy>

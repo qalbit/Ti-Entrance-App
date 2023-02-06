@@ -1,0 +1,54 @@
+<Alloy>
+	<Window id="w_add_product_information" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<ScrollView id="scr_cont">
+				<!-- Product Title  -->
+				<Label id="lbl_product_title" />
+				
+				<!-- Serial Cont -->
+				<View class="v_cont_tf">
+					<Label class="lbl_title" id="lbl_key_serial" />
+					<TextField class="txf_value" id="txf_serial" />
+				</View>
+				
+				<!-- ID Cont -->
+				<View class="v_cont_tf">
+					<Label class="lbl_title" id="lbl_key_id" />
+					<TextField class="txf_value" id="txf_id" />
+				</View>
+
+				<!-- Opmerking intern -->
+				<View class="v_cont_tf">
+					<Label class="lbl_title" id="lbl_key_opmerking" />
+					<TextField class="txf_value" id="txf_opmerking" />
+				</View>
+
+				<!-- Location Cont -->
+				<View class="v_cont_tf">
+					<Label class="lbl_title" id="lbl_key_location" />
+					<TextField class="txf_value" id="txf_location" />
+				</View>
+				
+				<!-- Materials Items -->
+				<View class="v_cont_material">
+					<View class="v_cont_photo_add" onClick="doAddMultipleMaterial">
+						<Label class="lbl_item" id="lbl_select_material" />
+						<Label id="lbl_select_photo_add" />
+					</View>
+					<ScrollView id="list_activity" />
+				</View>
+				
+				<!-- Image Upload Items -->
+				<View class="v_cont_photos" id="v_add_multiple">
+					<View id="v_add_photo_cont" class="v_cont_photo_add" onClick="doAddMultiplePhotos">
+						<Label class="lbl_item" id="lbl_select_photo" />
+						<Label id="lbl_select_photo_add" />
+					</View>
+					<ScrollView id="scr_ig_container"></ScrollView>
+				</View>
+				
+			</ScrollView>
+			<Button id="btn_add_product" onClick="doAddProduct" />
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,86 @@
+"#w_error_device_list": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: '',
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	navBarHidden: false,
+	title: "Gegevens"
+},
+
+"#v_cont": {
+	bottom: 50,
+	layout: 'vertical',
+},
+
+// ======= ERROR CODE ===========================
+"#v_error_code": {
+	top : Alloy.CFG.Space.Normal,
+	left : Alloy.CFG.Space.Normal,
+	right : Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+},
+"#l_error_code_key": {
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color : Alloy.CFG.Colors.colorPrimaryDark,
+	font : {
+		fontSize : Alloy.CFG.FontSize.Tiny,
+		fontWeight : 'bold'
+	},
+	text : "ERROR CODE"
+},
+"#e_code": {
+	top: Alloy.CFG.Space.TwoDot,
+	left: 0,
+	right: 0,
+	width : Ti.UI.FILL,
+	height : 40,
+	backgroundColor: 'transparent',
+	color: Alloy.CFG.Colors.lblDarkColor,
+	borderColor: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize : Alloy.CFG.FontSize.Small,
+		fontWeight : 'normal'
+	},
+	padding: {
+		left: Alloy.CFG.Space.Normal,
+		right: Alloy.CFG.Space.Normal,
+		top: Alloy.CFG.Space.Normal,
+		bottom: Alloy.CFG.Space.Normal
+	},
+	hintText: "ERROR CODE"
+}
+
+// ======= ScrollView contains Items list =======
+"#scr_items": {
+	top: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false,
+	scrollType: 'vertical',
+	layout: 'vertical'
+},
+
+
+// ====== Send Failure Action ===================
+"#btn_send_error": {
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: 50,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	title: "Verder"
+},

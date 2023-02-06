@@ -1,0 +1,91 @@
+"#d_history": {
+    top: 40,
+    left: 20,
+    right: 20,
+    bottom: 40,
+    backgroundColor: Alloy.CFG.Colors.lblWhiteColor,
+    modal: true,
+    backgroundImage: ""
+},
+"#v_container": {
+    top: 20,
+    left: 20,
+    right: 20,
+    bottom: 20,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+},
+"#list_view_history": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#template_item": {
+    top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+"#v_item_content": {
+    left: 0,
+	right: 100,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#lbl_date": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblSemiDarkColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	text: "Bewerken"
+},
+"#lbl_user": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    top: Alloy.CFG.Space.Small,
+    font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	text: "Bewerken"
+},
+"#lbl_description": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	text: "Bewerken"
+},
+"#btn_link": {
+    visible: false,
+    right: 5,
+    width: 90,
+    height: 40,
+    font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor,
+    backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+    text: "Open Link",
+    borderRadius: Alloy.CFG.Space.Small
+}

@@ -1,0 +1,13 @@
+{
+	"id": "mylistview",
+	"name": "mylistview",
+	"description" : "A list view with TextField as UI",
+	"author": "QalbIT Solution(abidhusain@qalbit.com)",
+	"version": "1.0.0",
+	"copyright":"Copyright (c) 2020",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"ListView, Textfield",
+	"platforms":"android,ios"
+}

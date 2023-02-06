@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="w_internal">
+		<Label text="Internal" />
+	</View>
+</Alloy>

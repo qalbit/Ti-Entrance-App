@@ -1,0 +1,87 @@
+"#w_login[platform=android]": {
+	theme: "Theme.AppCompat.NoTitleBar"
+},
+// Scrollable holder which holds all in it.
+"#scr_cont": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical'
+},
+// View that holds Elements 
+"#v_elem_holder": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+// Dynamic logo that hold application logo
+"#ig_logo": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: Alloy.CFG.Default.logo
+},
+// TextField for Holding User field
+"#txf_username": {
+	top: Alloy.CFG.Space.Huge,
+	hintText: L("username"),
+	returnKeyType: Ti.UI.RETURNKEY_NEXT
+},
+// TextField for Holding Password field
+"#txf_password": {
+	top: Alloy.CFG.Space.Small,
+	hintText: L("password"),
+	passwordMask: true,
+	returnKeyType: Ti.UI.RETURNKEY_GO
+},
+// View which holds two view in horizontal layout
+"#v_additional_action": {
+	top: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Huge,
+	right: Alloy.CFG.Space.Huge,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+// Label for Forgot Password
+"#lbl_forgot": {
+	width: '50%',
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblSemiLightColor,
+	text: L("forgot_password")
+}, 
+// Label for Register User
+"#lbl_register": {
+	width: '50%',
+	height: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Tiny,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblSemiLightColor,
+	text: L("register")
+},
+// Button for Login User
+"#btn_login": {
+	top: Alloy.CFG.Space.Huge,
+	title: "LOGIN"
+},
+
+// View that holds Element for Loader 
+"#v_loader": {
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+// Loader UI
+"#act_loader": {
+	width: 42,
+	height: 42,
+	style: Titanium.UI.ActivityIndicatorStyle.PLAIN
+}

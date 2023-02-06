@@ -1,0 +1,77 @@
+<Alloy>
+	<Window id="w_information_delivery" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<ScrollView id="scr_cont">
+				<!-- Date Start & End & Event -->
+				<View id="v_event_info">
+					<View id="v_time_holder">
+						<View id="v_time_line">
+							<View id="v_ig_round_border" />
+							<View id="v_ig_line" />
+							<View id="v_ig_round_fill" />
+						</View>
+						<View id="v_time_content">
+							<Label id="lbl_start" />
+							<Label id="lbl_end" />
+						</View>
+					</View>
+					<View id="item_holder">
+						<Label id="item_title" />
+						<Label id="item_date" />
+					</View>
+				</View>
+				<Label class="title" id="lbl_title" />
+				<View class="v_seperator" />
+				
+				<View class="v_title_cont" id="v_client">
+					<Label class="key" id="lbl_cname_key" />
+					<Label class="subtitle" id="lbl_cname" />
+				</View>
+				<View class="v_title_cont" id="v_contact">
+					<Label class="key" id="lbl_contact_key" />
+					<View class="v_subtitle_grp">
+						<Label class="subtitle1" id="lbl_contact" />
+						<Label class="subtitle1 fontsmall" id="lbl_location_info" />
+					</View>
+				</View>
+				<View class="v_title_cont" id="v_email" onClick="doOpenEmailDialog">
+					<Label class="key" id="lbl_email_key" />
+					<Label class="subtitle" id="lbl_email" />
+				</View>
+				<View class="v_title_cont" id="v_phone_1" onClick="doOpenPhoneDialog">
+					<Label class="key" id="lbl_phone_1_key" />
+					<Label class="subtitle" id="lbl_phone_1" />
+				</View>
+				<View class="v_title_cont" id="v_phone_2" onClick="doOpenPhoneDialog">
+					<Label class="key" id="lbl_phone_2_key" />
+					<Label class="subtitle" id="lbl_phone_2" />
+				</View>
+				<View class="v_seperator" />
+				
+				<View class="v_title_cont" id="v_loca">
+					<Label class="key" id="lbl_loca_key" />
+					<Label class="subtitle" id="lbl_loca" />
+				</View>
+				<View class="v_title_cont" id="v_loca_add">
+					<Label class="key" id="lbl_loca_add_key" />
+					<Label class="subtitle" id="lbl_loca_add" />
+				</View>
+				<View class="v_title_cont" id="v_loca_btn">
+					<Button class="btnaction" id="btn_route_map" onClick="doOpenRouteMap" />
+				</View>
+				<View class="v_seperator" top="Alloy.CFG.Space.Normal" />
+				
+				<!-- <View class="v_title_cont" id="v_store">
+					<Label class="key" id="lbl_name_key" />
+					<Label class="subtitle" id="lbl_name" />
+				</View> -->
+				<View class="v_title_cont" id="v_desc">
+					<Label class="key" id="lbl_desc_key" />
+					<Label class="subtitle" id="lbl_desc" />
+				</View>
+				<View class="v_seperator" top="Alloy.CFG.Space.Normal" />
+			</ScrollView>
+			<Button id="btn_list_products" onClick="doOpenProducts" />
+		</View>
+	</Window>
+</Alloy>

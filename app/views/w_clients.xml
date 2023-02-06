@@ -1,0 +1,27 @@
+<Alloy>
+	<Window id="w_clients" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<SearchView platform="android" id="searchBar" ns="Ti.UI.Android" onChange="doSearchChange" onSubmit="doSearchReturn" />
+			<SearchBar platform="ios" id="searchBar" onChange="doSearchChange" onReturn="doSearchReturn" />
+			<ListView id="list_clients" defaultItemTemplate="template_clients" onItemclick="doItemClickClient">
+				<!-- <SearchView id="searchBar" platform="android" /> -->
+				<Templates>
+					<ItemTemplate name="template_clients" id="template_clients">
+						<View id="v_item_container" bindId="clientContainer">
+							<Label id="lbl_name" bindId="name" />
+							<View id="v_additon_items">
+								<View id="v_status_client" bindId="status" />
+								<Label id="lbl_client_grp" bindId="group" />
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<FooterView height="0" />
+				<ListSection id="list_section_clients" />
+			</ListView>
+		</View>
+		<View id="v_loader">
+			<ActivityIndicator id="act_loader" />
+		</View>
+	</Window>
+</Alloy>

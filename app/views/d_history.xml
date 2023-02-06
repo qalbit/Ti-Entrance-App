@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="d_history" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_container">
+			<ListView id="list_view_history" 
+				defaultItemTemplate="template_item"
+				onItemclick="doItemClickListener">
+				<Templates>
+					<ItemTemplate name="template_item" id="template_item">
+						<View id="v_item_container">
+							<View id="v_item_content">
+								<Label id="lbl_date" bindId="date" />
+								<Label id="lbl_user" bindId="user" />
+								<Label id="lbl_description" bindId="desc" />
+							</View>
+							<Label id="btn_link" bindId="link" />
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<FooterView height="0" />
+				<ListSection id="list_section_history" />
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

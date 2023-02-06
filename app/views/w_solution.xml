@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="w_solution" onOpen="doOpenWindow" onClose="doCloseWindow">
+		<View id="v_cont">
+			<View class="v_item_holder">
+				<Label id="lbl_name" class="lbl_header" />
+				<Label id="name_val" class="lbl_description" />
+			</View>
+			
+			<View class="v_item_holder">
+				<Label id="lbl_desc" class="lbl_header" />
+				<Label id="desc_val" class="lbl_description" />
+			</View>
+			
+			<View class="v_item_holder">
+				<Label id="lbl_sol" class="lbl_header" />
+				<Label id="sol_val" class="lbl_description" />
+			</View>
+			
+			<View class="v_item_holder">
+				<Label id="fault_resolved_val" class="lbl_description" />
+			</View>
+			
+			<Button id="btn_action" />
+		</View>
+	</Window>
+</Alloy>

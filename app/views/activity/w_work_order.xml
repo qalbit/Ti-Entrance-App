@@ -1,0 +1,61 @@
+<Alloy>
+	<View id="w_work_order">
+		<ScrollView class="activity_scrollview">
+			<View id="v_activity_container">
+				<View class="v_field_item" bottom="0">
+					<Label class="lbl_item" id="lbl_client" />
+				</View>
+				<View class="v_field_item">
+					<Label id="lbl_client_name" />
+					<Label id="lbl_client_location_main" />
+				</View>
+				
+				<!-- <View class="v_field_item">
+					<Label class="lbl_item" id="lbl_2_eng" />
+					<View class="lbl_txf_item" id="v_2_eng" onClick="doEngineerListOpen" platform="ios">
+						<Label id="lbl_2_eng_val" />
+					</View>
+					<Picker id="pickr_2_eng" platform="android" onChange="doPicker2EngChange" />
+				</View> -->
+				<!-- Visit -->
+				<View class="v_act_header">
+					<Label class="lbl_act_header" id="lbl_header_visit" />
+					<View class="v_header_seperator" />
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_date" />
+					<!-- iOS Picker -->
+					<View class="lbl_txf_item" id="txf_date" onClick="doDateOpen">
+						<Label id="txf_date_val" />
+					</View>
+					<!-- <TextField class="txf_item" id="txf_date" /> -->
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_arrival_time" />
+					<!-- iOS Picker -->
+					<View class="lbl_txf_item" id="txf_arrival_time" onClick="doArrivalTimeOpen">
+						<Label id="txf_arrival_val" />
+					</View>
+					<!-- <TextField class="txf_item" id="txf_arrival_time" /> -->
+				</View>
+				
+				<View class="v_field_item">
+					<Label class="lbl_item" id="lbl_departure_time" />
+					<!-- iOS Picker -->
+					<View class="lbl_txf_item" id="txf_depart_time" onClick="doDepartTimeOpen">
+						<Label id="txf_depart_val" />
+					</View>
+					<!-- <TextField class="txf_item" id="txf_departure_time" /> -->
+				</View>
+				
+				<!-- <View class="v_field_item">
+					<Label class="lbl_item" id="lbl_parking_cost" />
+					<TextField class="txf_item" id="txf_parking_time" />
+				</View> -->
+				
+			</View>
+		</ScrollView>
+	</View>
+</Alloy>

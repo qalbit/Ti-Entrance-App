@@ -1,0 +1,229 @@
+"#w_planner": {
+	backgroundImage: "",
+	navBarHidden: false,
+	title: "Planning",
+	backgroundColor: Alloy.CFG.Colors.winBgDark
+},
+/**
+ * 	Left Navigation button
+ */
+"#btn_left_toggle": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,
+	borderWidth: 0,
+	borderColor: 'transparent',
+	image: "/images/ic_menu.png"
+},
+
+/**
+ * 	ListView Planner Design
+ */
+"#list_planner": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+/**
+ * 	ListItem Content Template Design
+ */
+"#item_template_content": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: 'none'
+},
+
+/**
+ * 	Comment ListItem Container design
+ */
+"#item_container": {
+	top: '-8',
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	borderRadius: 0,// Alloy.CFG.Space.Tiny,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor,
+},
+/**
+ * 	Seperator 
+ */
+"#v_seperator": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: 1,
+	backgroundColor: Alloy.CFG.Colors.lblSemiLightColor
+},
+/**
+ * 	Holder container UI parts design
+ */
+"#item_holder": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+/**
+ * 	Activity Holder design
+ */
+"#item_activity_holder": {
+	left: 0,
+	width: 100,
+	top: Alloy.CFG.Space.Tiny,
+	bottom: Alloy.CFG.Space.Tiny,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+/**
+ * 	Activity Image
+ */
+"#action_img_cont": {
+	width: 60,
+	height: 60,
+	borderRadius: 30,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+"#image_action": {
+	width: 26,
+	height: 26
+},
+/**
+ * 	Activity Title
+ */
+"#activity_title": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: ""
+},
+/**
+ * 	Content Holder
+ */
+"#item_content_holder": {
+	left: 100,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+/**
+ * 	Key Location
+ */
+"#item_location_key": {
+	top: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Tiny,
+	right: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "LOCATION"
+},
+/**
+ * 	Value Location
+ */
+"#item_location_val": {
+	top: Alloy.CFG.Space.Tiny,
+	left: Alloy.CFG.Space.Tiny,
+	right: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "AHMEDABAD, GUJARAT, INDIA"
+},
+/**
+ * 	TIME Location
+ */
+"#item_time": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Tiny,
+	right: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Huge,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.colorPrimaryDark,
+	text: "06:00 PM"
+},
+
+/**
+ * 	ListItem Content Template Design
+ */
+"#item_template_header": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	backgroundSelectedColor: 'transparent',
+	selectionStyle: 'none'
+},
+/**
+ * 	Comment ListItem Container design
+ */
+"#item_container_content": {
+	top: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	borderRadius: Alloy.CFG.Space.Tiny,
+	backgroundColor: Alloy.CFG.Colors.lblWhiteColor,
+},
+/**
+ * 	Card Word Title
+ */
+"#card_date_word": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	left: Alloy.CFG.Space.Normal,
+	right: 100,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+/**
+ * 	Card Digit Title
+ */
+"#card_date_digit": {
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: 84,
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblSemiDarkColor,
+	text: ""
+},

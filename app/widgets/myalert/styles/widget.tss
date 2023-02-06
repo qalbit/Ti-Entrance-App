@@ -1,0 +1,29 @@
+"#alertdialog[platform=ios]": {
+	style: Ti.UI.iOS.AlertDialogStyle.PLAIN_TEXT_INPUT,
+	keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	value: "1"
+},
+
+"#v_cont_txf": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+
+"#txf_android": {
+	width: Ti.UI.FILL,
+	height: 40,
+	color: "black",
+	hintTextColor: "#A9A9A9",
+	font: {
+		fontSize: 12,
+		fontWeight: "normal"
+	},
+	keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	autocorrect: false,
+	autocapitalization: false,
+	backgroundColor: "white",
+	borderRadius: 6,
+	borderWidth: 1,
+	borderColor: "#A9A9A9",
+	value: "01"
+}

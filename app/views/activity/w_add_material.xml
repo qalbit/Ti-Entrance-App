@@ -1,0 +1,31 @@
+<Alloy>
+	<Window id="w_add_material" onClose="doCloseAddMaterial" onOpen="doOpenWindow">
+		<RightNavButton platform="ios">
+			<Button class="fab_action" id="btn_checked" onClick="doAddMaterials" />
+		</RightNavButton>
+		<Widget id="myalert" src="myalert" onValueAdded="doValueAddedQty" />
+		<View id="v_cont">
+			<SearchView platform="android" id="searchBar" ns="Ti.UI.Android" onChange="doSearchChange" onSubmit="doSearchReturn" />
+			<SearchBar platform="ios" id="searchBar" barColor="Alloy.CFG.Colors.bgLightGray" onChange="doSearchChange" onReturn="doSearchReturn" />
+			<Widget id="mylist" src="mylistview" onQtypopup="doOpenQtyPopup" onUpdateItem="onUpdateItemProduct" onClearItems="onClearItemsProduct"></Widget>
+			<!-- <ListView id="list_activities" defaultItemTemplate="template_item" onItemclick="doItemClickMaterial">
+				<HeaderView id="list_header_activities">
+					<View id="v_item_container_header">
+						<Label class="item_header_lbl" id="item_serial" text="Artikelnummer" />
+						<Label class="item_header_lbl" id="item_product" text="Product" />
+					</View>
+				</HeaderView>
+				<Templates>
+					<ItemTemplate name="template_item" id="template_item">
+						<View id="v_item_container" bindId="productContainer">
+							<Label class="item_lbl" id="item_serial" text="Serie" bindId="serial" />
+							<Label class="item_lbl" id="item_product" text="Product" bindId="product" />
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<FooterView height="0" />
+				<ListSection id="list_section_activities" />
+			</ListView> -->
+		</View>
+	</Window>
+</Alloy>

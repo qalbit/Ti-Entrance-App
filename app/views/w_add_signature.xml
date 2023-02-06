@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="w_add_signature" onClose="doCloseWin" onOpen="doOpenWin">
+	    <View id="v_cont">
+	        <ImageView id="ig_sign_here" />
+	        <View id="v_signature_area">
+	            <Module id="paint" module="ti.paint" method="createPaintView" />
+	        </View>
+	    </View>
+	    <View id="v_action">
+	        <Button id="btn_clear" onClick="doClearPaint" />
+	        <Button id="btn_save" onClick="doSavePaint" />
+	    </View>
+	</Window>
+</Alloy>

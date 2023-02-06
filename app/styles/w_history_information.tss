@@ -1,0 +1,93 @@
+"#w_history_information": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: false,
+	title: "History Detail"
+},
+
+
+"#scr_cont": {
+	top: 0,
+	bottom: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'vertical',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true
+},
+
+
+/**
+ * 	Scroll Item Design Start
+ */
+".v_item_container": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+".lbl_item_key": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	text: "Title Key",
+	color: Alloy.CFG.Colors.tfLightBgColor
+},
+
+".lbl_item_val": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	text: "Title Value",
+	color: Alloy.CFG.Colors.lblWhiteColor
+},
+".v_seperator": {
+	left: Alloy.CFG.Space.Normal,
+	right: Alloy.CFG.Space.Normal,
+	top: Alloy.CFG.Space.Normal,
+	bottom: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: 1,
+	backgroundColor: Alloy.CFG.Colors.lblSemiLightColor
+},
+
+"#item_title": {
+	text: "Title"
+},
+"#item_name": {
+	text: "Monteur"
+},
+"#item_date": {
+	text: "Datum"
+},
+"#item_start": {
+	text: "Begintijd"
+},
+"#item_end": {
+	text: "Einddtijd"
+},
+"#item_faildesc": {
+	text: "Omschrijving storing"
+},
+"#item_workdesc": {
+	text: "Werkzaamheden"
+},
+"#item_desc": {
+	text: "Opmerking"
+},
+
+/**
+ * 	Scroll Item Design End
+ */

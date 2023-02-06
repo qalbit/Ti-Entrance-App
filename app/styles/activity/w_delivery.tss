@@ -1,0 +1,332 @@
+"#w_delivery": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: Alloy.CFG.Colors.winBg
+},
+
+"#scr_overview": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: 'vertical',
+	layout: 'vertical'
+},
+
+".v_block_container": {
+	top: Alloy.CFG.Space.Normal,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+
+
+"#lbl_2_eng_val": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+"#txf_date_val": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+"#txf_arrival_val": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+"#txf_depart_val": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+"#txf_parking_cost": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+},
+
+"#lbl_client": {
+	text: "Klant"
+},
+"#lbl_client_name": {
+	top: Alloy.CFG.Space.Tiny,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: ""
+}
+
+"#lbl_client_location": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: ""
+}
+"#txf_client": {
+	hintText: "Klant"	
+},
+"#lbl_2_eng": {
+	text: "2de monteur"
+},
+"#txf_2_eng": {
+	hintText: "2de monteur"
+},
+"#lbl_header_visit": {
+	text: "Bezoek"
+},
+"#lbl_date": {
+	text: "Datum"
+},
+"#txf_date": {
+	hintText: "Datum"	
+},
+"#lbl_arrival_time": {
+	text: "Aankomsttijd"
+},
+"#txf_arrival_time": {
+	hintText: "Aankomsttijd"
+},
+"#lbl_departure_time": {
+	text: "Vertrektijd"
+},
+"#txf_departure_time": {
+	hintText: "Vertrektijd"
+},
+"#lbl_parking_cost": {
+	text: "Parkeerkosten"
+},
+"#lbl_header_activities": {
+	text: "Werkzaamheden"
+},
+
+//==== LIST VIEW ====//
+"#list_activities_data": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	layout: 'vertical'
+},
+"#list_activities": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#list_materials": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	separatorColor: Alloy.CFG.Colors.bgLightGray,
+	backgroundColor: "transparent"
+},
+"#template_item_act": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	selectionStyle: 'none'
+},
+"#template_item": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	selectionStyle: 'none'
+},
+"#template_item_material": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	selectionStyle: 'none'
+},
+"#v_item_container": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#v_item_container_act": {
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+".lbl_item_title": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Normal,
+		fontWeight: 'bold'
+	},
+	color: Alloy.CFG.Colors.lblDarkColor,
+	text: "Header"
+},
+".lbl_item_desc": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'normal'
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	text: "Description"
+},
+".item_lbl": {
+	height: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small,
+		fontWeight: 'bold'
+	}
+},
+"#item_id": {
+	width: "8%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#item_serial": {
+	width: "14%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+},
+"#item_product": {
+	width: "26%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#item_model": {
+	width: "26%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#item_melding": {
+	width: "26%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#lbl_header_materials": {
+	text: "Materialen"
+},
+"#item_qty": {
+	width: "24%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#item_product_material": {
+	left: "2%",
+	width: "37%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+},
+"#item_number_material": {
+	width: "37%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT	
+},
+
+"#lbl_name": {
+	text: "Naam"
+},
+"#txf_name_del": {
+	hintText: "Naam"
+},
+"#lbl_email": {
+	text: "Email"
+},
+"#txf_email_del": {
+	hintText: "Email"
+},
+"#lbl_signature": {
+	text: "Handtekening"
+},
+"#ig_signature": {
+	top: Alloy.CFG.Space.Small,
+	bottom: Alloy.CFG.Space.Small,
+	left: Alloy.CFG.Space.Small,
+	right: Alloy.CFG.Space.Small,
+	width: Titanium.UI.FILL,
+	height: 140,
+	borderColor: Alloy.CFG.Colors.colorPrimaryDark
+},
+
+".v_item_signature": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+".lbl_item": {
+	left: 0,
+	right: 60,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE	
+},
+"#v_btn_action": {
+	left: 0,
+	right: 0,
+	bottom: 0,
+	layout: 'composite'
+}
+"#btn_save": {
+	left: 0,
+	right: "50%",
+	width: Ti.UI.FILL,
+	height: 56,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblDefaultColor,
+	backgroundColor: Alloy.CFG.Colors.winBg,
+	title: "Opslaan"
+},
+"#btn_send": {
+	left: "50%",
+	right: 0,
+	width: Ti.UI.FILL,
+	height: 56,
+	font: {
+		fontSize: Alloy.CFG.FontSize.Small
+	},
+	color: Alloy.CFG.Colors.lblWhiteColor,
+	backgroundColor: Alloy.CFG.Colors.colorPrimaryDark,
+	title: "Afronden en versturen"
+}
